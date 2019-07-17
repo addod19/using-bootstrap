@@ -24,16 +24,21 @@ nav {
 }
 
 .Featured-Stories {
-    height: 40em;
+    height: 70em;
     border: 1px solid black;
 }
 
 .Top-Story {
-    height: 40em;
+    height: 70em;
     border: 1px solid black;
 }
 
 .Opinion {
-    height: 40em;
+    height: 70em;
+    border: 1px solid black;
+}
+
+.inside-mag {
+    height: 30em;
     border: 1px solid black;
 }
