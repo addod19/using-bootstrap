@@ -1,0 +1,39 @@
+:root {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: 6rem;
+    width: 100%;
+    background: #f72210;
+}
+
+nav {
+    height: 4rem;
+    width: 100%;
+    background: white;
+    border: 1px solid gray;
+}
+
+.Featured-Stories {
+    height: 40em;
+    border: 1px solid black;
+}
+
+.Top-Story {
+    height: 40em;
+    border: 1px solid black;
+}
+
+.Opinion {
+    height: 40em;
+    border: 1px solid black;
+}
