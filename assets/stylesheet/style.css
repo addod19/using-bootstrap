@@ -42,3 +42,43 @@ nav {
     height: 30em;
     border: 1px solid black;
 }
+
+.section {
+    height: 30em;
+    border: 1px solid red;
+}
+
+.one,
+.two,
+.three {
+    height: 10em;
+    border: 1px dotted greenyellow;
+}
+
+.one {
+    background: red;
+}
+
+.two {
+    background: gold;
+}
+
+.three {
+    background: green;
+}
+
+.subscribe {
+    height: 23em;
+    background: black;
+}
+
+.newsletter {
+    height: 23em;
+    background: cyan;
+}
+
+footer {
+    height: 14em;
+    border: 2px solid black;
+    background: white;
+}
