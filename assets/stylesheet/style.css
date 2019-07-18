@@ -11,7 +11,7 @@ html {
 }
 
 header {
-    height: 6rem;
+    height: 9rem;
     width: 100%;
     background: #f72210;
 }
@@ -68,8 +68,21 @@ nav {
 }
 
 .subscribe {
-    height: 23em;
-    background: black;
+    height: 25em;
+    background: white;
+}
+
+.subscribe>h3 {
+    color: #f72210;
+}
+
+.h1 {
+    top: 2rem;
+}
+
+.news {
+    position: relative;
+    bottom: 18px;
 }
 
 .newsletter {
@@ -81,4 +94,29 @@ footer {
     height: 14em;
     border: 2px solid black;
     background: white;
+}
+
+.text-white {
+    color: white;
+}
+
+.date {
+    position: relative;
+    margin: 3em;
+    top: 3.3em;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.sign-in_subscribe {
+    margin-top: 4rem;
+    font-size: 1.7em;
+    font-weight: 800;
+}
+
+.sub-container {
+    border: 1px solid white;
 }
