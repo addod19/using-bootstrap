@@ -17,24 +17,28 @@ header {
 }
 
 nav {
-    height: 4rem;
     width: 100%;
-    background: white;
+    background: blue;
     border: 1px solid gray;
+    font-size: 1.6em;
 }
 
 .Featured-Stories {
-    height: 70em;
+    height: auto;
     border: 1px solid black;
 }
 
+.article-wrapper {
+    height: 30em;
+}
+
 .Top-Story {
-    height: 70em;
+    height: 170em;
     border: 1px solid black;
 }
 
 .Opinion {
-    height: 70em;
+    height: 170em;
     border: 1px solid black;
 }
 
@@ -88,6 +92,43 @@ nav {
 .newsletter {
     height: 23em;
     background: cyan;
+}
+
+.wrap {
+    height: 300px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h3>a {
+    color: black;
+    font-weight: bolder;
+}
+
+.summary {
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+picture {
+    width: 397px;
+    height: 265px;
+    border: 1px solid green;
+}
+
+.category {
+    display: block;
+    font: bold 17px/16px "Roboto Condensed", sans-serif;
+    color: #f72210;
+    text-transform: uppercase;
+    padding: 8px 15px 9px;
+    background: rgba(255, 255, 255, .9);
+    position: absolute;
+    left: 0;
+    top: 17em;
 }
 
 footer {
