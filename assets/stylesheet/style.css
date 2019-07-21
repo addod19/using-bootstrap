@@ -25,11 +25,10 @@ nav {
 
 .Featured-Stories {
     height: auto;
-    border: 1px solid black;
 }
 
 .article-wrapper {
-    height: 30em;
+    height: 33em;
 }
 
 .Top-Story {
@@ -89,6 +88,17 @@ nav {
     bottom: 18px;
 }
 
+.more-stories h3 {
+    color: rgba(3, 3, 3, .4);
+    margin-top: 13em;
+}
+
+.hori-line {
+    width: 100%;
+    height: 1px;
+    background: rgba(3, 3, 3, .4);
+}
+
 .newsletter {
     height: 23em;
     background: cyan;
@@ -98,9 +108,24 @@ nav {
     height: 300px;
 }
 
+.full-img {
+    width: 100%;
+    height: 364px;
+}
+
+.Featured-Stories h3,
+.Top-Story h3,
+.Opinion h3 {
+    color: rgba(3, 3, 3, .4);
+    font-size: 1.3em;
+    font: bold 16px/16px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+}
+
 h3 {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 23px;
+    line-height: 23px;
 }
 
 h3>a {
@@ -108,27 +133,74 @@ h3>a {
     font-weight: bolder;
 }
 
-.summary {
-    font-size: 1.2em;
+h3>a:hover {
+    text-decoration: underline;
+    text-decoration-color: #f72210;
+    color: black;
+}
+
+h3>a .summary {
+    font-size: 1.1em;
     font-weight: 200;
 }
 
-picture {
-    width: 397px;
-    height: 265px;
-    border: 1px solid green;
-}
-
-.category {
+.category,
+.category1,
+.category2,
+.category3 {
     display: block;
     font: bold 17px/16px "Roboto Condensed", sans-serif;
     color: #f72210;
     text-transform: uppercase;
-    padding: 8px 15px 9px;
     background: rgba(255, 255, 255, .9);
     position: absolute;
+}
+
+.category-top {
+    position: absolute;
+    top: 23.1em;
+    display: block;
+    font: bold 17px/16px "Roboto Condensed", sans-serif;
+    color: #f72210;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, .9);
+    padding: 8px 15px 9px;
+}
+
+.category {
     left: 0;
+    padding: 8px 15px 9px;
     top: 17em;
+}
+
+.category1 {
+    padding: 10px;
+    top: 44em;
+}
+
+.category2 {
+    padding: 10px;
+    top: 71.2em;
+}
+
+.category3 {
+    padding: 10px;
+    top: 98.4em;
+}
+
+.special {
+    height: 100em;
+    margin-top: 5em;
+    width: 85%;
+}
+
+.image-sponsor {
+    height: 30em;
+}
+
+.row-container {
+    height: 8em;
+    margin-top: 1em;
 }
 
 footer {
@@ -139,6 +211,10 @@ footer {
 
 .text-white {
     color: white;
+}
+
+.pos h4 {
+    margin-top: 0;
 }
 
 .date {
