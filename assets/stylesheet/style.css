@@ -16,6 +16,16 @@ header {
     background: #f72210;
 }
 
+.art-margin {
+    margin-top: 1em;
+}
+
+.hori-line {
+    height: 1px;
+    width: 100%;
+    background: gray;
+}
+
 nav {
     width: 100%;
     background: blue;
@@ -33,17 +43,37 @@ nav {
 
 .Top-Story {
     height: 170em;
-    border: 1px solid black;
+}
+
+.sum-wrap h3,
+.sum-wrap .summary {
+    margin-top: 0;
+}
+
+.sum-wrap .my-font {
+    font-size: .8em;
+    color: black;
+}
+
+.summary1 {
+    font-size: .8em;
+}
+
+.sum-wrap>h3 {
+    font-size: 1.1em;
 }
 
 .Opinion {
     height: 170em;
-    border: 1px solid black;
 }
 
 .inside-mag {
     height: 30em;
     border: 1px solid black;
+}
+
+.bottom {
+    margin-bottom: 1em;
 }
 
 .section {
@@ -221,6 +251,15 @@ footer {
     position: relative;
     margin: 3em;
     top: 3.3em;
+}
+
+.late-pic {
+    width: 100%;
+    height: 6em;
+}
+
+.h4-index {
+    margin-top: 1em;
 }
 
 a:hover {
