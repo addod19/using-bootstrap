@@ -2,12 +2,26 @@
     box-sizing: border-box;
 }
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0 none;
+    list-style: none outside none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -15,13 +29,16 @@ header {
     width: 100%;
     background: #f72210;
 }
+
 .lazyside {
-  width: 100%;
+    width: 100%;
 }
+
 .lazyside1 {
-  width: 100%;
-  height: 360px;
+    width: 100%;
+    height: 360px;
 }
+
 .art-margin {
     margin-top: 1em;
 }
@@ -102,6 +119,16 @@ nav {
     background: gold;
 }
 
+.gb {
+    background: url("https://g.newsweek.com/themes/newsweek/images/subscribe-img2.gif") center center / cover no-repeat;
+}
+
+.subscribe-block .mag-thumb.current {
+    position: absolute;
+    top: 13px;
+    left: 80px;
+}
+
 .three {
     background: green;
 }
@@ -131,6 +158,10 @@ nav {
     top: 2rem;
 }
 
+h3 {
+    font-weight: 700;
+}
+
 .news {
     position: relative;
     bottom: 18px;
@@ -149,7 +180,6 @@ nav {
 
 .newsletter {
     height: 23em;
-    background: cyan;
 }
 
 .wrap {
@@ -311,4 +341,95 @@ a:hover {
 
 .sub-container {
     border: 1px solid white;
+}
+
+.subscribe-block .col-l {
+    background-color: #f4f5f6;
+    padding: 24px 20px 20px;
+}
+
+.subscribe-block h3 {
+    margin-bottom: 15px;
+    line-height: 28px;
+}
+
+.ai-c {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.f1 .info {
+    float: left;
+}
+
+.f1 {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.lk {
+    display: inline-block;
+    padding: 10px 10px 10px 12px;
+    color: white;
+    font: bold 18px/18px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    background-color: #666;
+}
+
+.lk.red {
+    background-color: #f72210;
+}
+
+.subscribe-block .lk {
+    margin-bottom: 0;
+}
+
+.block-title.red {
+    color: #f72210;
+}
+
+.block-title {
+    font: bold 16px/16px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    padding: 1em;
+    color: rgba(12, 11, 11, .8);
+}
+
+.newletter-image {
+    background: url("https://g.newsweek.com/themes/newsweek/images/subscribe-img2.gif") center center / cover no-repeat;
+}
+
+.fn,
+.flex-n {
+    -webkit-flex: none;
+    flex: none;
+}
+
+.info h1,
+.info h2,
+.info h3,
+.info h4,
+.info h5,
+.info h6 {
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe-block .col-l,
+    .subscribe-block .col-r .info {
+        padding: 30px;
+    }
+    .subscribe-block .col-r .image {
+        max-width: 191px;
+        width: 48%;
+    }
+    .flex-sm {
+        display: -webkit-flex;
+        display: flex;
+    }
+    body {
+        font-size: 15px;
+        line-height: 20px;
+    }
 }
