@@ -101,22 +101,35 @@ nav {
 
 .section {
     height: 30em;
-    border: 1px solid red;
+}
+
+.section article {
+    margin-top: 1em;
 }
 
 .one,
 .two,
 .three {
-    height: 10em;
-    border: 1px dotted greenyellow;
+    height: 8em;
+    margin-top: 1em;
 }
 
-.one {
-    background: red;
+.h4-class {
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-.two {
-    background: gold;
+.h4-class a {
+    color: black;
+    text-decoration: none;
+}
+
+.anchor-color {
+    color: black;
+    text-decoration: none;
+}
+
+.h4-class a:hover {
+    color: black;
 }
 
 .gb {
@@ -127,10 +140,6 @@ nav {
     position: absolute;
     top: 13px;
     left: 80px;
-}
-
-.three {
-    background: green;
 }
 
 .spe-article {
