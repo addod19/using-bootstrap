@@ -107,6 +107,76 @@ nav {
     margin-top: 1em;
 }
 
+.cate-action {
+    color: red;
+}
+
+{
+    position: relative;
+    top: 13em;
+    left: 0;
+    color: black;
+    border: 1px solid green;
+    height: 4em;
+}
+
+.posi-text a {
+    text-align: left;
+}
+
+.content-message {
+    height: 4em;
+    width: 100%;
+    border: 1px solid green;
+}
+
+.n-title {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.n-logo {
+    width: 40px;
+    height: 40px;
+    background: red;
+    color: white;
+    padding: 5px;
+}
+
+.text-desc {
+    height: 100px;
+    width: 100px;
+    border: 1px solid magenta;
+}
+
+.count-link {
+    width: 70px;
+    height: 52px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: .75em;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 58px;
+    text-indent: 5px;
+    text-align: center;
+    background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+    color: #e9212e;
+}
+
+.icon-n a {
+    color: black;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.icon-n a:hover {
+    color: black;
+}
+
 .one,
 .two,
 .three {
@@ -422,6 +492,77 @@ a:hover {
 .info h5,
 .info h6 {
     display: inline-block;
+}
+
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.page-footer {
+    border-top: 2px solid #f4f5f6;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-footer .social {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+li {
+    display: inline;
+}
+
+.menu li {
+    float: left;
+    margin: .6em;
+}
+
+.menu li a {
+    color: black;
+}
+
+.menu li a:hover {
+    list-style: none;
+}
+
+.ai-fe {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.page-footer .copyright {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 992px) {
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12 {
+        float: left;
+    }
+    .col-md-7 {
+        width: 58.33333333%;
+    }
+    .container-fluid {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 @media screen and (min-width: 768px) {
