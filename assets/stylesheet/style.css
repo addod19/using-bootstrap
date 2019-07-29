@@ -90,9 +90,20 @@ nav {
     height: 170em;
 }
 
+.image {
+    width: 100%;
+}
+
+.row {
+    margin-top: 2em;
+}
+
+.our-img {
+    width: 100%;
+}
+
 .inside-mag {
-    height: 30em;
-    border: 1px solid black;
+    height: 25em;
 }
 
 .bottom {
@@ -130,11 +141,26 @@ nav {
     border: 1px solid green;
 }
 
+.mar {
+    margin-top: 2vh;
+}
+
+.no-margin {
+    margin-top: 0;
+}
+
 .n-title {
     border-bottom: 1px solid #d9d9d9;
     padding-bottom: 12px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10vh;
+}
+
+.n-title1 {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 12px;
+    text-align: center;
+    margin-top: 1vh;
 }
 
 .n-logo {
@@ -177,6 +203,34 @@ nav {
     color: black;
 }
 
+.icon-n {
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    left: 1vh;
+    margin-left: 2vh;
+}
+
+.n-logo {
+    align-self: center;
+    font-weight: 700;
+}
+
+.grid {
+    display: inline-block;
+}
+
+.call {
+    display: inline;
+}
+
+.feat {
+    height: 2em;
+    width: 6em;
+    background: red;
+    color: white;
+}
+
 .one,
 .two,
 .three {
@@ -191,6 +245,7 @@ nav {
 .h4-class a {
     color: black;
     text-decoration: none;
+    float: right;
 }
 
 .anchor-color {
@@ -209,7 +264,7 @@ nav {
 .subscribe-block .mag-thumb.current {
     position: absolute;
     top: 13px;
-    left: 80px;
+    left: 50px;
 }
 
 .spe-article {
@@ -254,7 +309,6 @@ h3 {
 .hori-line {
     width: 100%;
     height: 1px;
-    background: rgba(3, 3, 3, .4);
 }
 
 .newsletter {
@@ -380,7 +434,6 @@ h3>a .summary {
 
 footer {
     height: 14em;
-    border: 2px solid black;
     background: white;
 }
 
@@ -438,7 +491,7 @@ a:hover {
 }
 
 .f1 .info {
-    float: left;
+    display: inline;
 }
 
 .f1 {
@@ -528,6 +581,20 @@ li {
     list-style: none;
 }
 
+.my-color {
+    background: red;
+    color: white;
+    height: 25px;
+    width: 30px;
+    text-align: center;
+}
+
+.txt {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+}
+
 .ai-fe {
     -webkit-align-items: flex-end;
     align-items: flex-end;
@@ -578,8 +645,17 @@ li {
         display: -webkit-flex;
         display: flex;
     }
+    .all-img {
+        width: 100%;
+    }
     body {
         font-size: 15px;
         line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 446px) {
+    .all-img {
+        width: 100%;
     }
 }
