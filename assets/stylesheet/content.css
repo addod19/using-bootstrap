@@ -381,6 +381,12 @@ footer ul li a {
     font-weight: bolder;
 }
 
+.nav-item:hover {
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
 .navbar {
     padding: 0;
     border-bottom: 1px solid silver;
