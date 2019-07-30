@@ -1,1454 +1,829 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/stylesheet/style.css">
-    <title>newsweek</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/content.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+    <link rel="icon" type="image/png" href="./assets/favico/favico.png">
+    <title>Using bootstrap</title>
+
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-sm-12">
-                    <span class="text-white date">Wed, Jul, 3, 2019</span>
-                </div>
-                <div class="col-lg-5 clo-sm-12 news">
-                    <h1 class="text-white h1" style="font-size: 5.9em;font-weight: 800">Newsweek</h1>
-                </div>
-                <div class="col-lg-3 col-sm-12 sign-in_subscribe">
-                    <span>
-                        <a href="#" class="text-white" style="font-size:.8em;text-decoration: none;color:white;margin:1rem;padding:1rem">SIGN IN</a>
-                    </span>
-                    <span class="sub-container" style="background: #f72210;color: white">
-                        <a href="#" class="text-white subscribe" style="color: #f72210;text-decoration: none">Subscribe > </a>
-                    </span>
-                </div>
-            </div>
+    <nav class="navbar  navbar-expand-xxl justify-content-between fixed-top nav_1 border border-0">
+        <a class="nav-brand"><img alt="brand_name" src="./assets/images/main_logo.png" class="img-fluid"></a>
+        <div class="ml-auto sign_in_subscribe">
+            <a class="text-white">SIGN IN </a> <button class="btn btn-sm btn-light ">SUBSCRIBE</button>
         </div>
-    </header>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <ul class="nav navbar-nav">
-                <li><a href="">n32</a></li>
-                <li><a href="">two233</a></li>
-                <li><a href="">n32</a></li>
-                <li><a href="">two233</a></li>
-                <li><a href="">n32</a></li>
-                <li><a href="">two233</a></li>
-                <li><a href="">n32</a></li>
-                <li><a href="">two233</a></li>
-            </ul>
-        </div>
-    </nav>
-    <main>
-        <div class="container-fluid">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#my">
+            <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my">
+            <ul class="navbar-nav exhibit">
+                <li class="nav-item d-flex">
+                    <a class="nav-link "></a><img alt="search" src="assets/images/search.png">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"> US <i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"> WORLD <i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"> BUSINESS <i class="fas fa-chevron-right"></i></a>
+                </li>
 
-            <div class="row">
-                <div class="col-lg-4 Featured">
-                    <section class="Featured-Stories">
-                        <h3>Featured Stories</h3>
-                        <article class="article-wrapper">
-                            <div class="wrap">
-                                <div class="category">Analysis</div>
-                                <div class="image">
-                                    <a href="#">
-                                        <picture>
-                                            <source media="(min-width: )">
-                                            <source media="()">
-                                            <img src="https://d.newsweek.com/en/full/1511786/newsweek-momentum-awards-2019.png?w=397&h=265&q=90&f=b5bee11f8b144487ff291880f4d318be" alt="">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <h3>
-                                    <a href="#">The Newsweek Monument Awards</a>
-                                </h3>
-                                <div class="summary">
-                                    The Newsweek Momentum Awards will recognize five individuals around the globe, as well as one city, which will be chosen as the "smartest city in the world."
-                                </div>
-                            </div>
-                        </article>
-                        <article class="article-wrapper">
-                            <div class="wrap">
-                                <div class="category1">U.S</div>
-                                <div class="image">
-                                    <a href="#">
-                                        <picture>
-                                            <source media="(min-width: )">
-                                            <source media="()">
-                                            <img class="all-img" src="https://d.newsweek.com/en/full/1513567/hope-hicks-stormy-daniels-hush-money-involvement.jpg?w=397&h=265&q=90&f=3e827926f1363a772f5d11ec4401098f" alt="">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <h3>
-                                    <a href="#">Hope Hicks' Lawyer Denies FBI Evidence, says She didn't Lie to Congress</a>
-                                </h3>
-                                <div class="summary">
-                                    "Ms. Hicks stands by her truthful testimny," attorney Robert Trout said in a statement issued on Friday.
-                                </div>
-                            </div>
-                        </article>
-                        <article class="article-wrapper">
-                            <div class="wrap">
-                                <div class="category2">World</div>
-                                <div class="image">
-                                    <a href="#">
-                                        <picture>
-                                            <source media="(min-width: )">
-                                            <source media="()">
-                                            <img class="all-img" src="https://d.newsweek.com/en/full/1513456/puerto-rico-protests.jpg?w=397&h=265&q=90&f=0aa87d224e48b780062858d14cde4e68" alt="">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <h3>
-                                    <a href="#">50 Firearms and 4,000 Bullets Stolen from Puerto Rico Police Station</a>
-                                </h3>
-                                <div class="summary">
-                                    THe burglary comes as thousands continue to call for the governor's resignation after a string of sexiest and homophobic text messages were leaked.
-                                </div>
-                            </div>
-                        </article>
-                        <article class="article-wrapper">
-                            <div class="wrap">
-                                <div class="category3">EDITOR'S NOTE</div>
-                                <div class="image">
-                                    <a href="#">
-                                        <picture>
-                                            <source media="(min-width: )">
-                                            <source media="()">
-                                            <img class="all-img" src="https://d.newsweek.com/en/full/1511669/spot-im-logo.png?w=397&h=265&q=90&f=fe63931482a6ab2a1825bd5559fc3c72" alt="">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <h3>
-                                    <a href="#">To Our Readers: </a>
-                                </h3>
-                                <div class="summary">
-                                    We always want to hear from you, and to make that easier, we've implemented a new commenting forum. Take a look at the bottom of Newsweek articles.Spot.IM is a tool that helps readers respond to our Stories and communicate with another - and with us.
-                                    Ask a question, embed a GIF point out a mistake. Be civil and respectul, please. And must be important: Be in touch.
-                                </div>
-                            </div>
-                        </article>
+                <li class="nav-item">
+                    <a class="nav-link">TECH & SCIENCE <i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">CULTURE <i class="fas fa-chevron-right"></i></a>
+                </li>
 
-                    </section>
-                    <section class="special">
-                        <article class="article-wrapper">
-                            <div class="wrap">
-                                <div class="category2">SPONSORED INSIGHT</div>
-                                <div class="image">
-                                    <a href="#">
-                                        <picture>
-                                            <source media="(min-width: )">
-                                            <source media="()">
-                                            <img class="all-img" src="./assets/images/sponsor.png" alt="">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <h3>
-                                    <a class="text-center" href="#">What are the leading global business schools of 2019?
-                                    </a>
-                                </h3>
-                                <div class="text-center summary">
-                                    Business schools offer more than just certification - they nurture the leaders of tomorrow. But which schools, in which coutries are producing graduates that will transform our world?
-                                </div>
-                            </div>
-                        </article>
-                        <article class="article-wrapper">
-                            <div class="wrap">
-                                <div class="category2">SURVEY</div>
-                                <div class="image">
-                                    <a href="#">
-                                        <picture>
-                                            <source media="(min-width: )">
-                                            <source media="()">
-                                            <img class="all-img" src="./assets/images/best-nursing.png" alt="">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <h3>
-                                    <a href="#">Best Nursing Homes</a>
-                                </h3>
-                                <div class="summary">
-                                    Newsweek is partnering with the respected global data research firm statistics Inc to establish a ranking of Best Nursing Homes. THe final rankings will be published in Newsweek magazine and on Newsweek.com
-                                </div>
-                            </div>
-                        </article>
-                        <article class="article-wrapper">
-                            <div class="wrap">
-                                <div class="category2">SPONSORED INSIGHT</div>
-                                <div class="image">
-                                    <a href="#">
-                                        <picture>
-                                            <source media="(min-width: )">
-                                            <source media="()">
-                                            <img class="all-img" src="./assets/images/insight.png" alt="">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <h3>
-                                    <a href="#">Why IB schools lead to a better degree of your child.</a>
-                                </h3>
-                                <div class="summary">
-                                    The international Baccalaurette(IB) accredited schools inspires young people to become lifelong learners and high academic acheivers - FInd out more.
-                                </div>
-                            </div>
-                        </article>
-                    </section>
-                </div>
-                <div class="col-lg-5 Top">
-                    <section class="Top-Story">
-                        <h3>Top Story</h3>
-                        <article>
-                            <div class="wrap">
-                                <div class="category-top">World</div>
-                                <div class="image">
-                                    <a href="#">
-                                        <picture>
-                                            <source media="(min-width: )">
-                                            <source media="()">
-                                            <img class="full-img" src="https://d.newsweek.com/en/full/1513625/us-iran-navy-drone-footage-gulf.jpg?w=591&h=364&q=90&f=6ade77487b2e823c110cfed56cdb8dce" alt="">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <h3>
-                                    <a class="text-center" href="#">Russia Warns 'Conflict' Could Break Out as U.S. and Iran Fight
-                                        Over Drones </a>
-                                </h3>
-                                <div class="summary">
-                                    "We can see once again that the situation is not just explosive. It is fraught with an outbreak of conflict," s senior Russia diplomat said.
-                                </div>
-                            </div>
-                        </article>
-                        <section class="more-stories">
-                            <h3>MORE STORIES</h3>
-                            <div class="hori-line"></div>
-                            <div class="row row-container">
-                                <div class="col-lg-4">
-                                    <article>
-                                        <a href="#">
-                                            <img src="https://d.newsweek.com/en/full/1513388/heatwave-hot-weather-lincoln-memorial-washington-dc.jpg?w=135&h=90&f=0ba36d2f0c393aff95e08bdac0381ecb" alt="">
-                                        </a>
-                                    </article>
-                                </div>
-                                <div class="col-lg-8 pos">
-                                    <h4><a href="">U.S Braces for Dangerous Heat Wave Over Weekend</a></h4>
-                                    <div class="summary">
-                                        The National Weather Service have urged the public to stay safe in the excessive heat.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row row-container first">
-                                <div class="col-lg-4">
-                                    <article>
-                                        <a href="#">
-                                            <img src="https://d.newsweek.com/en/full/1513388/heatwave-hot-weather-lincoln-memorial-washington-dc.jpg?w=135&h=90&f=0ba36d2f0c393aff95e08bdac0381ecb" alt="">
-                                        </a>
-                                    </article>
-                                </div>
-                                <div class="col-lg-8 pos">
-                                    <h4><a href="">U.S Braces for Dangerous Heat Wave Over Weekend</a></h4>
-                                    <div class="summary">
-                                        The National Weather Service have urged the public to stay safe in the excessive heat.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row row-container">
-                                <div class="col-lg-4">
-                                    <article>
-                                        <a href="#">
-                                            <img src="https://d.newsweek.com/en/full/1513388/heatwave-hot-weather-lincoln-memorial-washington-dc.jpg?w=135&h=90&f=0ba36d2f0c393aff95e08bdac0381ecb" alt="">
-                                        </a>
-                                    </article>
-                                </div>
-                                <div class="col-lg-8 pos">
-                                    <h4><a href="">U.S Braces for Dangerous Heat Wave Over Weekend</a></h4>
-                                    <div class="summary">
-                                        The National Weather Service have urged the public to stay safe in the excessive heat.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row row-container">
-                                <div class="col-lg-4">
-                                    <article>
-                                        <a href="#">
-                                            <img src="https://d.newsweek.com/en/full/1513388/heatwave-hot-weather-lincoln-memorial-washington-dc.jpg?w=135&h=90&f=0ba36d2f0c393aff95e08bdac0381ecb" alt="">
-                                        </a>
-                                    </article>
-                                </div>
-                                <div class="col-lg-8 pos">
-                                    <h4><a href="">U.S Braces for Dangerous Heat Wave Over Weekend</a></h4>
-                                    <div class="summary">
-                                        The National Weather Service have urged the public to stay safe in the excessive heat.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row row-container">
-                                <div class="col-lg-4">
-                                    <article>
-                                        <a href="#">
-                                            <img src="https://d.newsweek.com/en/full/1513388/heatwave-hot-weather-lincoln-memorial-washington-dc.jpg?w=135&h=90&f=0ba36d2f0c393aff95e08bdac0381ecb" alt="">
-                                        </a>
-                                    </article>
-                                </div>
-                                <div class="col-lg-8 pos">
-                                    <h4><a href="">U.S Braces for Dangerous Heat Wave Over Weekend</a></h4>
-                                    <div class="summary">
-                                        The National Weather Service have urged the public to stay safe in the excessive heat.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row row-container">
-                                <div class="col-lg-4">
-                                    <article>
-                                        <a href="#">
-                                            <img src="https://d.newsweek.com/en/full/1513388/heatwave-hot-weather-lincoln-memorial-washington-dc.jpg?w=135&h=90&f=0ba36d2f0c393aff95e08bdac0381ecb" alt="">
-                                        </a>
-                                    </article>
-                                </div>
-                                <div class="col-lg-8 pos">
-                                    <h4><a href="">U.S Braces for Dangerous Heat Wave Over Weekend</a></h4>
-                                    <div class="summary">
-                                        The National Weather Service have urged the public to stay safe in the excessive heat.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row row-container">
-                                <div class="col-lg-4">
-                                    <article>
-                                        <a href="#">
-                                            <img src="https://d.newsweek.com/en/full/1513388/heatwave-hot-weather-lincoln-memorial-washington-dc.jpg?w=135&h=90&f=0ba36d2f0c393aff95e08bdac0381ecb" alt="">
-                                        </a>
-                                    </article>
-                                </div>
-                                <div class="col-lg-8 pos">
-                                    <h4><a href="">U.S Braces for Dangerous Heat Wave Over Weekend</a></h4>
-                                    <div class="summary">
-                                        The National Weather Service have urged the public to stay safe in the excessive heat.
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </section>
+                <li class="nav-item">
+                    <a class="nav-link">SPORTS <i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">HEALTH <i class="fas fa-chevron-right"></i></a>
+                </li>
 
-                </div>
-                <div class="col-lg-3">
-                    <section class="Opinion">
-                        <h3>Opinion</h3>
+                <li class="nav-item">
+                    <a class="nav-link">OPINION <i class="fas fa-chevron-right"></i></a>
+                </li>
 
-                        <article>
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <img class="img img-circle" src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="">
-                                </div>
-                                <div class="col-lg-9 sum-wrap">
-                                    <h3 class="my-font">Yes, 'Send Her Back' Is the face of Evil - I Know Fascism WHen I See it</h3>
-                                    <div class="summary1">
-                                        BY JASON STANLEY
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <div class="hori-line"></div>
-                        <article>
-                            <div class="row art-margin">
-                                <div class="col-lg-3">
-                                    <img class="img img-circle" src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="">
-                                </div>
-                                <div class="col-lg-9 sum-wrap">
-                                    <h3 class="my-font">Yes, 'Send Her Back' Is the face of Evil - I Know Fascism WHen I See it</h3>
-                                    <div class="summary1">
-                                        BY JASON STANLEY
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <div class="hori-line"></div>
-                        <article>
-                            <div class="row art-margin">
-                                <div class="col-lg-3">
-                                    <img class="img img-circle" src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="">
-                                </div>
-                                <div class="col-lg-9 sum-wrap">
-                                    <h3 class="my-font">Yes, 'Send Her Back' Is the face of Evil - I Know Fascism WHen I See it</h3>
-                                    <div class="summary1">
-                                        BY JASON STANLEY
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <div class="hori-line"></div>
-                        <article>
-                            <div class="row art-margin">
-                                <div class="col-lg-3">
-                                    <img class="img img-circle" src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="">
-                                </div>
-                                <div class="col-lg-9 sum-wrap">
-                                    <h3 class="my-font">Yes, 'Send Her Back' Is the face of Evil - I Know Fascism WHen I See it</h3>
-                                    <div class="summary1">
-                                        BY JASON STANLEY
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <div class="hori-line"></div>
-                        <article>
-                            <div class="row art-margin">
-                                <div class="col-lg-3">
-                                    <img class="img img-circle" src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="">
-                                </div>
-                                <div class="col-lg-9 sum-wrap">
-                                    <h3 class="my-font">Yes, 'Send Her Back' Is the face of Evil - I Know Fascism WHen I See it</h3>
-                                    <div class="summary1">
-                                        BY JASON STANLEY
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <div class="hori-line"></div>
-                        <article>
-                            <div class="row art-margin">
-                                <div class="col-lg-3">
-                                    <img class="img img-circle" src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="">
-                                </div>
-                                <div class="col-lg-9 sum-wrap">
-                                    <h3 class="my-font">Yes, 'Send Her Back' Is the face of Evil - I Know Fascism WHen I See it</h3>
-                                    <div class="summary1">
-                                        BY JASON STANLEY
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <section class="latest-news-container">
-                            <h4 class="h4-index">Latest News</h4>
-                            <div class="row bottom">
-                                <di class="col-lg-5">
-                                    <article>
-                                        <a href="#">
-                                            <img class="late-pic" src="https://d.newsweek.com/en/full/1513700/presidential-candidate-bernie-sanders-delivers-address-medicare-all.jpg?w=397&h=265&f=c877706dbed4f3ce270f4aac0247d939" alt="">
-                                        </a>
-                                    </article>
-                                </di>
-                                <div class="col-lg-7">
-                                    <span>Florida Man Accused of Assaulting WOman Who Refused Sex in Hotel Room</span>
-                                </div>
-                            </div>
-                            <div class="hori-line"></div>
-                            <div class="row art-margin bottom">
-                                <di class="col-lg-5">
-                                    <article>
-                                        <a href="#">
-                                            <img class="late-pic" src="https://d.newsweek.com/en/full/1513700/presidential-candidate-bernie-sanders-delivers-address-medicare-all.jpg?w=397&h=265&f=c877706dbed4f3ce270f4aac0247d939" alt="">
-                                        </a>
-                                    </article>
-                                </di>
-                                <div class="col-lg-7">
-                                    <span>Florida Man Accused of Assaulting WOman Who Refused Sex in Hotel Room</span>
-                                </div>
-                            </div>
-                            <div class="hori-line"></div>
-                            <div class="row art-margin bottom">
-                                <di class="col-lg-5">
-                                    <article>
-                                        <a href="#">
-                                            <img class="late-pic" src="https://d.newsweek.com/en/full/1513700/presidential-candidate-bernie-sanders-delivers-address-medicare-all.jpg?w=397&h=265&f=c877706dbed4f3ce270f4aac0247d939" alt="">
-                                        </a>
-                                    </article>
-                                </di>
-                                <div class="col-lg-7">
-                                    <span>Florida Man Accused of Assaulting WOman Who Refused Sex in Hotel Room</span>
-                                </div>
-                            </div>
-                            <div class="hori-line"></div>
-                            <div class="row art-margin bottom">
-                                <di class="col-lg-5">
-                                    <article>
-                                        <a href="#">
-                                            <img class="late-pic" src="https://d.newsweek.com/en/full/1513700/presidential-candidate-bernie-sanders-delivers-address-medicare-all.jpg?w=397&h=265&f=c877706dbed4f3ce270f4aac0247d939" alt="">
-                                        </a>
-                                    </article>
-                                </di>
-                                <div class="col-lg-7">
-                                    <span>Florida Man Accused of Assaulting WOman Who Refused Sex in Hotel Room</span>
-                                </div>
-                            </div>
-                            <div class="hori-line"></div>
-                            <div class="row art-margin bottom">
-                                <di class="col-lg-5">
-                                    <article>
-                                        <a href="#">
-                                            <img class="late-pic" src="https://d.newsweek.com/en/full/1513700/presidential-candidate-bernie-sanders-delivers-address-medicare-all.jpg?w=397&h=265&f=c877706dbed4f3ce270f4aac0247d939" alt="">
-                                        </a>
-                                    </article>
-                                </di>
-                                <div class="col-lg-7">
-                                    <span>Florida Man Accused of Assaulting WOman Who Refused Sex in Hotel Room</span>
-                                </div>
-                            </div>
-                            <div class="hori-line"></div>
-                            <div class="row art-margin bottom">
-                                <di class="col-lg-5">
-                                    <article>
-                                        <a href="#">
-                                            <img class="late-pic" src="https://d.newsweek.com/en/full/1513700/presidential-candidate-bernie-sanders-delivers-address-medicare-all.jpg?w=397&h=265&f=c877706dbed4f3ce270f4aac0247d939" alt="">
-                                        </a>
-                                    </article>
-                                </di>
-                                <div class="col-lg-7">
-                                    <span>Florida Man Accused of Assaulting WOman Who Refused Sex in Hotel Room</span>
-                                </div>
-                            </div>
-                            <div class="hori-line"></div>
-                            <div class="row art-margin">
-                                <di class="col-lg-5">
-                                    <article>
-                                        <a href="#">
-                                            <img class="late-pic" src="https://d.newsweek.com/en/full/1513700/presidential-candidate-bernie-sanders-delivers-address-medicare-all.jpg?w=397&h=265&f=c877706dbed4f3ce270f4aac0247d939" alt="">
-                                        </a>
-                                    </article>
-                                </di>
-                                <div class="col-lg-7">
-                                    <span>Florida Man Accused of Assaulting WOman Who Refused Sex in Hotel Room</span>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="spe-article">
-                            <article class="">
-                                <div class="">
-
-                                    <div class="spe-img">
-                                        <a href="#">
-                                            <div class="category3 shead">sponsored insight</div>
-                                        </a>
-                                    </div>
-                                    <h3>
-                                        <a href="#">The Newsweek Monument Awards</a>
-                                    </h3>
-                                    <div class="summary">
-                                        The Newsweek Momentum Awards will recognize five individuals around the globe, as well as one city, which will be chosen as the "smartest city in the world."
-                                    </div>
-                                </div>
-                            </article>
-                        </section>
-                        <section class="sign-up-sec">
-                            <article>
-                                <div class="row">
-                                    2
-                                </div>
-                                <div class="row">34</div>
-                                <div class="row">2345678</div>
-                            </article>
-                        </section>
-                    </section>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="container-fluid in-the-magazine">
-
-            <div class="row">
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1512696/july-26-2019-cover.jpg?w=360&h=480&q=90&f=9da41d63933ea21396e9529a7782ab4a" class="lazyside">
-                        <h3 class="">See all Features</h3>
-                    </article>
-                </div>
-
-                <div class="col-lg-9">
-                    <div class="n-title1 flex-xs jc-c ai-c">
-                        <span class="n-logo">
-                                    N
-                                </span>
-                        <span class="icon-n">
-                                    <a href="">In The Magazine</a>
-                                </span>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="col-lg-4 inside-mag mar">
-                        <article>
-                            <img src="https://d.newsweek.com/en/full/1512184/fe-cancer-01-1012948362-banner.jpg?w=466&h=311&q=90&f=195700d26c22b7403cf40561221de05f" class="lazyside">
-                            <div class="grid">
-                                <div class="feat">Features</div>
-                                <div class="call">World</div>
-                            </div>
-                            <h3>Cover Tech and Science</h3>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 inside-mag">
-                        <article>
-                            <img src="https://d.newsweek.com/en/full/1512240/fe-cancer-sidebar-michael-caligiuri.jpg?w=466&h=311&q=90&f=7d948a988652e834d977692d2272607f" class="lazyside">
-                            <h3>Features World</h3>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 inside-mag">
-                        <article>
-                            <img src="https://d.newsweek.com/en/full/1512245/fe-cancer-sidebar-stanley-robboy.jpg?w=466&h=311&q=90&f=f84e02c450df17d23861e77aa04501c8" class="lazyside">
-                            <h3>Features Tech and Science</h3>
-                        </article>
-                    </div>
-                </div>
-            </div><br><br>
-            <div class="row">
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1508647/ron-sullivan-newsweek-interview-harvard-harvey-weinstein.jpg?w=466&h=311&l=50&t=67&q=90&f=0631fad07c14e5612232f10b7b3e280a" class="lazyside">
-                        <h3>Culture</h3>
-                    </article>
-                </div>
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1512326/cul-woodstock-01.jpg?w=466&h=311&q=90&f=84dddf2f0380e3e80d1050b470e40272" class="lazyside">
-                        <h3>Downtime Culture</h3>
-                    </article>
-                </div>
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1503544/gretchen-carlson.png?w=466&h=311&q=90&f=353cacca2914d98cb49ef07e5b7e4b4f" class="lazyside">
-                        <h3>Culture</h3>
-                    </article>
-                </div>
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1512312/no-peace.jpg?w=480&h=320&q=90&f=90bfd241864bca2c783d9116f11b986a" class="lazyside">
-                        <h3>Big SHots</h3>
-                    </article>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid editor's-pick">
-            <div class="row"><br><br>
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1514055/us-cuba-embassy.jpg?w=397&h=295&f=3270a462a036e1b1d75a9067346dfa89" class="lazyside1">
-                        <h3>U.S</h3>
-                    </article>
-                </div>
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1513874/special-counsel-robert-mueller-russia-press-conference.jpg?w=397&h=295&f=d77e825b942ed342359f9e32fbba9a2a" class="lazyside1">
-                        <h3>News</h3>
-                    </article>
-                </div>
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=397&h=295&f=3a06ad8eb714b1fe857ac48a1d095ad5" class="lazyside1">
-                        <h3>Politics</h3>
-                    </article>
-                </div>
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1513995/alexandria-ocasio-cortez.jpg?w=397&h=295&f=ee8f8e1e937d4d4567e9dea37c7b0171" class="lazyside1">
-                        <h3>World</h3>
-                    </article>
-                </div>
-            </div><br><br>
-            <div class="row">
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1514020/donald-trump.jpg?w=397&h=295&f=7eca14224976b50f6edcd9610bfb7507" class="lazyside1">
-                        <h3>Politics</h3>
-                    </article>
-                </div>
-                <div class="col-lg-3 inside-mag ">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1513452/9mm-pistol-fun-firearm-muzzle-stock.jpg?w=397&h=295&f=28d89f85f7c12726891b13bdd0d174c7" class="lazyside1">
-                        <h3>Tech and Science</h3>
-                    </article>
-                </div>
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1513841/sergey-ryabkov-russia-venezuela-us-troops.jpg?w=397&h=295&f=c0235d8cc1ffa7f2ccb01fddf5b55017" class="lazyside1">
-                        <h3>U.S</h3>
-                    </article>
-                </div>
-                <div class="col-lg-3 inside-mag">
-                    <article>
-                        <img src="https://d.newsweek.com/en/full/1513945/undocumented-immigrants-go-court-border-patrol.jpg?w=397&h=295&f=1d5c13eeebf5f829138ff7a4b077007d" class="lazyside1">
-                        <h3>U.S</h3>
-                    </article>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid featured-slideshows">
-            <div class="n-title flex-xs jc-c ai-c">
-                <span class="n-logo">
-                    N
-                </span>
-                <span class="icon-n">
-                    <a href="">Featured Slideshows</a>
-                </span>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 inside-mag">
-                    <article class="col-sm-12">
-                        <div class="image">
-                            <a href="#">
-                                <picture width="399" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=397&h=265&l=34&t=27&f=74dc444a96f906b4d71ec24a0df32e52 1x" srcset="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=397&h=265&l=34&t=27&f=74dc444a96f906b4d71ec24a0df32e52 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=300&h=200&l=34&t=27&f=5563c1f0fdb23ce6e99d58c10ff5d9f3 1x" srcset="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=300&h=200&l=34&t=27&f=5563c1f0fdb23ce6e99d58c10ff5d9f3 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=767&h=512&l=34&t=27&f=c072772432e561424a164690e4974db4 1x" srcset="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=767&h=512&l=34&t=27&f=c072772432e561424a164690e4974db4 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=466&h=311&l=34&t=27&f=898079a697f6d488d4e62aacd818a2c3 1x" srcset="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=466&h=311&l=34&t=27&f=898079a697f6d488d4e62aacd818a2c3 1x">
-                                    <img class="our-img" alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=397&h=265&l=34&t=27&f=74dc444a96f906b4d71ec24a0df32e52" src="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=397&h=265&l=34&t=27&f=74dc444a96f906b4d71ec24a0df32e52">
-                                </picture>
-                            </a>
-                            <a href="" class="count-link">13</a>
-                        </div>
-                    </article>
-                    <h3 class="posi-text">
-                        <a href="">The Revamped Oscar de la Renta Is All the Rage</a>
-                    </h3>
-
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 inside-mag">
-                    <article class="col-sm-12">
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=397&h=265&f=bb7385a6191b40fe082f868859587304 1x" srcset="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=397&h=265&f=bb7385a6191b40fe082f868859587304 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=300&h=200&f=17e6b869a89853e8f1b42a3de75b2283 1x" srcset="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=300&h=200&f=17e6b869a89853e8f1b42a3de75b2283 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=767&h=512&f=6ae891ac8c25390ea775acf83608e8c6 1x" srcset="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=767&h=512&f=6ae891ac8c25390ea775acf83608e8c6 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=466&h=311&f=5b6cb118cb4e6dec01bc4ee523268946 1x" srcset="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=466&h=311&f=5b6cb118cb4e6dec01bc4ee523268946 1x">
-                                    <img class="our-img" alt="Oscar 11" data-src="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=397&h=265&f=bb7385a6191b40fe082f868859587304" src="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=397&h=265&f=bb7385a6191b40fe082f868859587304">
-                                </picture>
-                            </a>
-                            <a href="" class="count-link">13</a>
-                        </div>
-                    </article>
-                    <h3 class="posi-text">
-                        <a href="">The Revamped Oscar de la Renta Is All the Rage</a>
-                    </h3>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 inside-mag">
-                    <article class="col-sm-12">
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=397&h=265&l=0&t=0&f=afdd7b8de0f1e30d30fd23ee9d8de1c7 1x" srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=397&h=265&l=0&t=0&f=afdd7b8de0f1e30d30fd23ee9d8de1c7 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=300&h=200&l=0&t=0&f=180e0f0af1eb0dddd1bd41d2420c5195 1x" srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=300&h=200&l=0&t=0&f=180e0f0af1eb0dddd1bd41d2420c5195 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=767&h=512&l=0&t=0&f=55ee6bce8e8106701cf65268463dcab7 1x" srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=767&h=512&l=0&t=0&f=55ee6bce8e8106701cf65268463dcab7 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=466&h=311&l=0&t=0&f=2f7b1ebcf36524366f77184808c0facf 1x" srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=466&h=311&l=0&t=0&f=2f7b1ebcf36524366f77184808c0facf 1x">
-                                    <img class="our-img" alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=397&h=265&l=0&t=0&f=afdd7b8de0f1e30d30fd23ee9d8de1c7" src="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=397&h=265&l=0&t=0&f=afdd7b8de0f1e30d30fd23ee9d8de1c7">
-                                </picture>
-                            </a>
-                            <a href="" class="count-link">13</a>
-                        </div>
-                    </article>
-                    <h3 class="posi-text">
-                        <a href="">The Revamped Oscar de la Renta Is All the Rage</a>
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 inside-mag">
-                    <article class="col-sm-12">
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=397&h=265&f=ef31ddb1cbe8c40714c16af48aaed9f6 1x" srcset="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=397&h=265&f=ef31ddb1cbe8c40714c16af48aaed9f6 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=300&h=200&f=dce780307a9506b3bda862ceed0bd4d8 1x" srcset="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=300&h=200&f=dce780307a9506b3bda862ceed0bd4d8 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=767&h=512&f=048c5c7e40f6e51f2f47cd309dba9494 1x" srcset="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=767&h=512&f=048c5c7e40f6e51f2f47cd309dba9494 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=466&h=311&f=a241c4d4c527d07c60f84a9cecf07b2c 1x" srcset="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=466&h=311&f=a241c4d4c527d07c60f84a9cecf07b2c 1x">
-                                    <img class="our-img" alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=397&h=265&f=ef31ddb1cbe8c40714c16af48aaed9f6" src="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=397&h=265&f=ef31ddb1cbe8c40714c16af48aaed9f6">
-                                </picture>
-                            </a>
-                            <a href="" class="count-link">13</a>
-                        </div>
-                    </article>
-                    <h3 class="posi-text">
-                        <a href="">The Revamped Oscar de la Renta Is All the Rage</a>
-                    </h3>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 inside-mag">
-                    <article class="col-sm-12">
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=397&h=265&f=2e9a742611134322537a4553d9d98e59 1x" srcset="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=397&h=265&f=2e9a742611134322537a4553d9d98e59 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=300&h=200&f=7ddf51e489db669820146dd01dd10179 1x" srcset="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=300&h=200&f=7ddf51e489db669820146dd01dd10179 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=767&h=512&f=e1069d896130ae127101a42fa77ab51c 1x" srcset="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=767&h=512&f=e1069d896130ae127101a42fa77ab51c 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=767&h=512&f=e1069d896130ae127101a42fa77ab51c 1x" srcset="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=767&h=512&f=e1069d896130ae127101a42fa77ab51c 1x">
-                                    <img class="our-img" alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=397&h=265&f=2e9a742611134322537a4553d9d98e59" src="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=397&h=265&f=2e9a742611134322537a4553d9d98e59">
-                                </picture>
-                            </a>
-                            <a href="" class="count-link">13</a>
-                        </div>
-                    </article>
-                    <h3 class="posi-text">
-                        <a href="">The Revamped Oscar de la Renta Is All the Rage</a>
-                    </h3>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 inside-mag">
-                    <article class="col-sm-12">
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=397&h=265&f=8026342d93704d4734e44082b7578d19 1x" srcset="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=397&h=265&f=8026342d93704d4734e44082b7578d19 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=300&h=200&f=384c1c8b0a8f9f59772f07a55f96b355 1x" srcset="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=300&h=200&f=384c1c8b0a8f9f59772f07a55f96b355 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=767&h=512&f=763c577329617a790e59aa3c5f430f25 1x" srcset="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=767&h=512&f=763c577329617a790e59aa3c5f430f25 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=466&h=311&f=e2eddb9dced436e1d865e1e6ca9cf834 1x" srcset="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=466&h=311&f=e2eddb9dced436e1d865e1e6ca9cf834 1x">
-                                    <img class="our-img" alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=397&h=265&f=8026342d93704d4734e44082b7578d19" src="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=397&h=265&f=8026342d93704d4734e44082b7578d19">
-                                </picture>
-                            </a>
-                            <a href="" class="count-link">13</a>
-                        </div>
-                    </article>
-                    <h3 class="posi-text">
-                        <a href="">The Revamped Oscar de la Renta Is All the Rage</a>
-                    </h3>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="container-fluid news-col-3-in-3-3-rows">
-            <div>
-                <h3 class="cate-action">U.S</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 section">
-                    <article>
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1514372/britain-politics.jpg?w=397&h=265&f=370564d92c3f1aa3537f968de3982381 1x" srcset="https://d.newsweek.com/en/full/1514372/britain-politics.jpg?w=397&h=265&f=370564d92c3f1aa3537f968de3982381 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514372/britain-politics.jpg?w=300&h=200&f=9edfa6e9e5241214892f9dc51b31cbbf 1x" srcset="https://d.newsweek.com/en/full/1514372/britain-politics.jpg?w=300&h=200&f=9edfa6e9e5241214892f9dc51b31cbbf 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514372/britain-politics.jpg?w=767&h=512&f=0b0b61e8c317525340d00b00d8be6346 1x" srcset="https://d.newsweek.com/en/full/1514372/britain-politics.jpg?w=767&h=512&f=0b0b61e8c317525340d00b00d8be6346 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514372/britain-politics.jpg?w=466&h=311&f=c16fe57b6a4c3dd6854e896c55430969 1x" srcset="https://d.newsweek.com/en/full/1514372/britain-politics.jpg?w=466&h=311&f=c16fe57b6a4c3dd6854e896c55430969 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514372/britain-politics.jpg?w=397&h=265&f=370564d92c3f1aa3537f968de3982381" src="https://d.newsweek.com/en/full/1514372/britain-politics.jpg?w=397&h=265&f=370564d92c3f1aa3537f968de3982381">
-                                </picture>
-                            </a>
-                        </div>
-                        <h4 class="h4-class">
-                            <a href="#">
-                                WHC - FedEX St. Jude Odds : Who Is Favorite to WIn at TPC Southwind
-                            </a>
-                        </h4>
-                    </article>
-                </div>
-                <div class="col-lg-4 section">
-                    <article>
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1514241/emanuela-orlandi-sign.jpg?w=397&h=265&l=0&t=0&f=bb48388540ccee5b4cc0bf65cd85ec73 1x" srcset="https://d.newsweek.com/en/full/1514241/emanuela-orlandi-sign.jpg?w=397&h=265&l=0&t=0&f=bb48388540ccee5b4cc0bf65cd85ec73 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514241/emanuela-orlandi-sign.jpg?w=300&h=200&l=0&t=0&f=245c71b3d7374f9879fad18cdeca523a 1x" srcset="https://d.newsweek.com/en/full/1514241/emanuela-orlandi-sign.jpg?w=300&h=200&l=0&t=0&f=245c71b3d7374f9879fad18cdeca523a 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=397&h=265&f=dfd3a6952f490c84b0caf4665610e213 1x" srcset="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=767&h=512&f=ed163fb3b3cd8f0950f44641678c935d 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514241/emanuela-orlandi-sign.jpg?w=767&h=512&l=0&t=0&f=9ed82d7dfa091ddbf6fcf75967b1320f 1x" srcset="https://d.newsweek.com/en/full/1514241/emanuela-orlandi-sign.jpg?w=767&h=512&l=0&t=0&f=9ed82d7dfa091ddbf6fcf75967b1320f 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514241/emanuela-orlandi-sign.jpg?w=466&h=311&l=0&t=0&f=de04df41c9da7768eeb0887e3ba478c8 1x" src="https://d.newsweek.com/en/full/1514241/emanuela-orlandi-sign.jpg?w=397&h=265&l=0&t=0&f=bb48388540ccee5b4cc0bf65cd85ec73">
-                                </picture>
-                            </a>
-                        </div>
-                        <h4 class="h4-class">
-                            <a href="#">
-                                WHC - FedEX St. Jude Odds : Who Is Favorite to WIn at TPC Southwind
-                            </a>
-                        </h4>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 section">
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                    WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                    </a>3
-                        </div>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                </a>3
-                        </div>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                </a>3
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="hori-line main"></div>
-            <div>
-                <h3 class="cate-action">Business</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 section">
-                    <article>
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=397&h=265&f=da003a1972f9242d5e1740578b5b4568 1x" srcset="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=397&h=265&f=da003a1972f9242d5e1740578b5b4568 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=300&h=200&f=0b914e6d99b479ede2610ba7d1129163 1x" srcset="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=300&h=200&f=0b914e6d99b479ede2610ba7d1129163 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=767&h=512&f=97c86078f71817033187cbbb1f4a61f5 1x" srcset="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=767&h=512&f=97c86078f71817033187cbbb1f4a61f5 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=466&h=311&f=0dc809a449ce675a7319b71d7122abbd 1x" srcset="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=466&h=311&f=0dc809a449ce675a7319b71d7122abbd 1x">
-                                    <img alt="Matt Shumer, Founder & CEO of Visos" data-src="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=397&h=265&f=da003a1972f9242d5e1740578b5b4568" src="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=397&h=265&f=da003a1972f9242d5e1740578b5b4568">
-                                </picture>
-                            </a>
-                        </div>
-                        <h4 class="h4-class">
-                            <a href="#">
-                                WHC - FedEX St. Jude Odds : Who Is Favorite to WIn at TPC Southwind
-                            </a>
-                        </h4>
-                    </article>
-                </div>
-                <div class="col-lg-4 section">
-                    <article>
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=397&h=265&f=a433bffa4c4cb24a799ee539efbdcce2 1x" srcset="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=397&h=265&f=a433bffa4c4cb24a799ee539efbdcce2 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=300&h=200&f=711011d3614ea8e54c148210768020fa 1x" srcset="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=300&h=200&f=711011d3614ea8e54c148210768020fa 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=767&h=512&f=793ec33de309e5a20d341f80fe93b1e8 1x" srcset="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=767&h=512&f=793ec33de309e5a20d341f80fe93b1e8 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=466&h=311&f=ff72b5e02cbf9585bc8fb4029b7b8129 1x" srcset="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=466&h=311&f=ff72b5e02cbf9585bc8fb4029b7b8129 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=397&h=265&f=a433bffa4c4cb24a799ee539efbdcce2" src="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=397&h=265&f=a433bffa4c4cb24a799ee539efbdcce2">
-                                </picture>
-                            </a>
-                        </div>
-                        <h4 class="h4-class">
-                            <a href="#">
-                                WHC - FedEX St. Jude Odds : Who Is Favorite to WIn at TPC Southwind
-                            </a>
-                        </h4>
-                    </article>
-                </div>
-                <div class="col-lg-4 section">
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                            WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                            </a>3
-                        </div>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                </a>3
-                        </div>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                </a>3
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="hori-line"></div>
-            <div>
-                <h3 class="cate-action">Tech & Science</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 section">
-                    <article>
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1514420/bison-yellowstone-national-park.jpg?w=397&h=265&f=5a70430b2137c70128f419798cd7fa56 1x" srcset="https://d.newsweek.com/en/full/1514420/bison-yellowstone-national-park.jpg?w=397&h=265&f=5a70430b2137c70128f419798cd7fa56 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514420/bison-yellowstone-national-park.jpg?w=300&h=200&f=5f8b0fab6a75e7804834b9ab2c3e8469 1x" srcset="https://d.newsweek.com/en/full/1514420/bison-yellowstone-national-park.jpg?w=300&h=200&f=5f8b0fab6a75e7804834b9ab2c3e8469 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514420/bison-yellowstone-national-park.jpg?w=767&h=512&f=1fa292a96969c6ec188c2c010288f3f4 1x" srcset="https://d.newsweek.com/en/full/1514420/bison-yellowstone-national-park.jpg?w=767&h=512&f=1fa292a96969c6ec188c2c010288f3f4 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514420/bison-yellowstone-national-park.jpg?w=466&h=311&f=4c83b95ff4042c5e1b1e52ed740a90b7 1x" srcset="https://d.newsweek.com/en/full/1514420/bison-yellowstone-national-park.jpg?w=466&h=311&f=4c83b95ff4042c5e1b1e52ed740a90b7 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514420/bison-yellowstone-national-park.jpg?w=397&h=265&f=5a70430b2137c70128f419798cd7fa56" src="https://d.newsweek.com/en/full/1514420/bison-yellowstone-national-park.jpg?w=397&h=265&f=5a70430b2137c70128f419798cd7fa56">
-                                </picture>
-                            </a>
-                        </div>
-                        <h4 class="h4-class">
-                            <a href="#">
-                                WHC - FedEX St. Jude Odds : Who Is Favorite to WIn at TPC Southwind
-                            </a>
-                        </h4>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 section">
-                    <article>
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1514398/asteroids.jpg?w=397&h=265&f=1dfa135cc676fdb2fe4d004b77227be1 1x" srcset="https://d.newsweek.com/en/full/1514398/asteroids.jpg?w=397&h=265&f=1dfa135cc676fdb2fe4d004b77227be1 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514398/asteroids.jpg?w=300&h=200&f=c51a4c5b360605e8c9cb269b55f36920 1x" srcset="https://d.newsweek.com/en/full/1514398/asteroids.jpg?w=300&h=200&f=c51a4c5b360605e8c9cb269b55f36920 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514398/asteroids.jpg?w=767&h=512&f=73ae759773beb342a9e12d8a7b2623db 1x" srcset="https://d.newsweek.com/en/full/1514398/asteroids.jpg?w=767&h=512&f=73ae759773beb342a9e12d8a7b2623db 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514398/asteroids.jpg?w=466&h=311&f=35954e5acac19ed34ba6eb2864d838ab 1x" srcset="https://d.newsweek.com/en/full/1514398/asteroids.jpg?w=466&h=311&f=35954e5acac19ed34ba6eb2864d838ab 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514398/asteroids.jpg?w=397&h=265&f=1dfa135cc676fdb2fe4d004b77227be1" src="https://d.newsweek.com/en/full/1514398/asteroids.jpg?w=397&h=265&f=1dfa135cc676fdb2fe4d004b77227be1">
-                                </picture>
-                            </a>
-                        </div>
-                        <h4 class="h4-class">
-                            <a href="#">
-                                WHC - FedEX St. Jude Odds : Who Is Favorite to WIn at TPC Southwind
-                            </a>
-                        </h4>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 section">
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                    WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                    </a>3
-                        </div>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                </a>3
-                        </div>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                </a>3
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="hori-line"></div>
-            <div>
-                <h3 class="cate-action">Culture</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 section">
-                    <article>
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=397&h=265&l=0&t=0&f=afdd7b8de0f1e30d30fd23ee9d8de1c7 1x" srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=397&h=265&l=0&t=0&f=afdd7b8de0f1e30d30fd23ee9d8de1c7 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=300&h=200&l=0&t=0&f=180e0f0af1eb0dddd1bd41d2420c5195 1x" srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=300&h=200&l=0&t=0&f=180e0f0af1eb0dddd1bd41d2420c5195 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=767&h=512&l=0&t=0&f=55ee6bce8e8106701cf65268463dcab7 1x" srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=767&h=512&l=0&t=0&f=55ee6bce8e8106701cf65268463dcab7 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=466&h=311&l=0&t=0&f=2f7b1ebcf36524366f77184808c0facf 1x" srcset="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=466&h=311&l=0&t=0&f=2f7b1ebcf36524366f77184808c0facf 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=397&h=265&l=0&t=0&f=afdd7b8de0f1e30d30fd23ee9d8de1c7" src="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=397&h=265&l=0&t=0&f=afdd7b8de0f1e30d30fd23ee9d8de1c7">
-                                </picture>
-                            </a>
-                        </div>
-                        <h4 class="h4-class">
-                            <a href="#">
-                                WHC - FedEX St. Jude Odds : Who Is Favorite to WIn at TPC Southwind
-                            </a>
-                        </h4>
-                    </article>
-                </div>
-                <div class="col-lg-4 section">
-                    <article>
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1514442/jamie-foxx-vs-donald-glover-fans-debate-which-actor-better-twitter.png?w=397&h=265&f=b4c20909d8fbf036ed15067a6dcdd84e 1x" srcset="https://d.newsweek.com/en/full/1514442/jamie-foxx-vs-donald-glover-fans-debate-which-actor-better-twitter.png?w=397&h=265&f=b4c20909d8fbf036ed15067a6dcdd84e 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514442/jamie-foxx-vs-donald-glover-fans-debate-which-actor-better-twitter.png?w=300&h=200&f=4af13780a76961ca56662d742810e7d7 1x" srcset="https://d.newsweek.com/en/full/1514442/jamie-foxx-vs-donald-glover-fans-debate-which-actor-better-twitter.png?w=300&h=200&f=4af13780a76961ca56662d742810e7d7 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514442/jamie-foxx-vs-donald-glover-fans-debate-which-actor-better-twitter.png?w=767&h=512&f=a331764b8819bf5c8ce5d234525202fc 1x" srcset="https://d.newsweek.com/en/full/1514442/jamie-foxx-vs-donald-glover-fans-debate-which-actor-better-twitter.png?w=767&h=512&f=a331764b8819bf5c8ce5d234525202fc 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514442/jamie-foxx-vs-donald-glover-fans-debate-which-actor-better-twitter.png?w=466&h=311&f=ffc2815a56670941f3897c56f3c6bade 1x" srcset="https://d.newsweek.com/en/full/1514442/jamie-foxx-vs-donald-glover-fans-debate-which-actor-better-twitter.png?w=466&h=311&f=ffc2815a56670941f3897c56f3c6bade 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514442/jamie-foxx-vs-donald-glover-fans-debate-which-actor-better-twitter.png?w=397&h=265&f=b4c20909d8fbf036ed15067a6dcdd84e" src="https://d.newsweek.com/en/full/1514442/jamie-foxx-vs-donald-glover-fans-debate-which-actor-better-twitter.png?w=397&h=265&f=b4c20909d8fbf036ed15067a6dcdd84e">
-                                </picture>
-                            </a>
-                        </div>
-                        <h4 class="h4-class">
-                            <a href="#">
-                                WHC - FedEX St. Jude Odds : Who Is Favorite to WIn at TPC Southwind
-                            </a>
-                        </h4>
-                    </article>
-                </div>
-                <div class="col-lg-4 section">
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                    WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                    </a>3
-                        </div>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                </a>3
-                        </div>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                </a>3
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="hori-line"></div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3 class="cate-action">Sports</h3>
-            </div>
-            <div class="">
-                <div class="col-lg-4 section">
-                    <article>
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1514414/dustin-johnson-open.jpg?w=397&h=265&f=59fa5db00af930b2ddd1186185345371 1x" srcset="https://d.newsweek.com/en/full/1514414/dustin-johnson-open.jpg?w=397&h=265&f=59fa5db00af930b2ddd1186185345371 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514414/dustin-johnson-open.jpg?w=300&h=200&f=fa21959c2e648f0de6a0fedb86f82d16 1x" srcset="https://d.newsweek.com/en/full/1514414/dustin-johnson-open.jpg?w=300&h=200&f=fa21959c2e648f0de6a0fedb86f82d16 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514414/dustin-johnson-open.jpg?w=767&h=512&f=67219339af40b77821b8e0dfb3a085f3 1x" srcset="https://d.newsweek.com/en/full/1514414/dustin-johnson-open.jpg?w=767&h=512&f=67219339af40b77821b8e0dfb3a085f3 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514414/dustin-johnson-open.jpg?w=466&h=311&f=8d12d07cc46530a0ec7fa909baebb890 1x" srcset="https://d.newsweek.com/en/full/1514414/dustin-johnson-open.jpg?w=466&h=311&f=8d12d07cc46530a0ec7fa909baebb890 1x">
-                                    <img class="all-img" alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514414/dustin-johnson-open.jpg?w=397&h=265&f=59fa5db00af930b2ddd1186185345371" src="https://d.newsweek.com/en/full/1514414/dustin-johnson-open.jpg?w=397&h=265&f=59fa5db00af930b2ddd1186185345371">
-                                </picture>
-                            </a>
-                        </div>
-                        <h4 class="h4-class">
-                            <a href="#">
-                                WHC - FedEX St. Jude Odds : Who Is Favorite to WIn at TPC Southwind
-                            </a>
-                        </h4>
-                    </article>
-                </div>
-                <div class="col-lg-4 section">
-                    <article>
-                        <div class="image">
-                            <a href="#">
-                                <picture width="397" height="265" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 992px)" data-srcset="https://d.newsweek.com/en/full/1513845/jurgen-klopp-liverpool.jpg?w=397&h=265&f=57137eb1571eff398492ad8dcd8b049f 1x" srcset="https://d.newsweek.com/en/full/1513845/jurgen-klopp-liverpool.jpg?w=397&h=265&f=57137eb1571eff398492ad8dcd8b049f 1x">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1513845/jurgen-klopp-liverpool.jpg?w=300&h=200&f=81ece1fdc5d1130e75a06366c7e2b488 1x" srcset="https://d.newsweek.com/en/full/1513845/jurgen-klopp-liverpool.jpg?w=300&h=200&f=81ece1fdc5d1130e75a06366c7e2b488 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1513845/jurgen-klopp-liverpool.jpg?w=767&h=512&f=1dbf7d492b476091f355f3a96ecacd90 1x" srcset="https://d.newsweek.com/en/full/1513845/jurgen-klopp-liverpool.jpg?w=767&h=512&f=1dbf7d492b476091f355f3a96ecacd90 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1513845/jurgen-klopp-liverpool.jpg?w=466&h=311&f=b75bd12b03eefdf11bc9106f5448c6c7 1x" srcset="https://d.newsweek.com/en/full/1513845/jurgen-klopp-liverpool.jpg?w=466&h=311&f=b75bd12b03eefdf11bc9106f5448c6c7 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1513845/jurgen-klopp-liverpool.jpg?w=397&h=265&f=57137eb1571eff398492ad8dcd8b049f" src="https://d.newsweek.com/en/full/1513845/jurgen-klopp-liverpool.jpg?w=397&h=265&f=57137eb1571eff398492ad8dcd8b049f">
-                                </picture>
-                            </a>
-                        </div>
-                        <h4 class="h4-class">
-                            <a href="#">
-                                WHC - FedEX St. Jude Odds : Who Is Favorite to WIn at TPC Southwind
-                            </a>
-                        </h4>
-                    </article>
-                </div>
-
-                <div class="hori-line"></div>
-                <div class="col-lg-4 section">
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                    WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                    </a>3
-                        </div>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                </a>3
-                        </div>
-                    </div>
-                    <div class="hori-line"></div>
-                    <div class="row one">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <a href="#">
-                                <picture width="135" height="90" class="mapping-sm_lg lazyside">
-                                    <source media="(min-width: 768px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <source media="(min-width: 481px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=300&h=200&f=52e00c6b3cca8d4872358c8c8cd77fbb 1x">
-                                    <source media="(min-width: 0px)" data-srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x" srcset="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6 1x">
-                                    <img alt="Pierre Cardin" data-src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6" src="https://d.newsweek.com/en/full/1514390/brooks-koepka.jpg?w=135&h=90&f=2685b7c0f2a78aa046c6f46d69c8dce6">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <a href="" class="anchor-color">
-                                WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule
-                                </a>3
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="subscribe-block">
-                    <div class="col-md-7 col-lg-8 subscribe flex-md fd-c">
-                        <div class="block-title red">subscribe</div>
-                        <div class="col-l fl flex-sm ai-c">
-                            <div class="fn-image">
-                                <div class="col-lg-5">
-                                    <div class="mag-thumb prev">
-                                        <img class="lazyloaded" data-src="https://d.newsweek.com/en/full/1508688/july-12-19-2019-cover.jpg?w=170&q=95&f=bdb8d52895fcb19012e8c2dbb564c521" src="https://d.newsweek.com/en/full/1508688/july-12-19-2019-cover.jpg?w=170&q=95&f=bdb8d52895fcb19012e8c2dbb564c521"
-                                            alt="">
-                                    </div>
-                                    <div class="mag-thumb current">
-                                        <img class="lazyloaded" data-src="https://d.newsweek.com/en/full/1512696/july-26-2019-cover.jpg?w=170&q=95&f=62e741a78533834d86c15249d07b772a" src="https://d.newsweek.com/en/full/1512696/july-26-2019-cover.jpg?w=170&q=95&f=62e741a78533834d86c15249d07b772a"
-                                            alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="f1 info">
-                                        <h3>In-depth Stories You Don't See Elsewhere About Topics You Want to Read</h3>
-                                        <p>All Access + Weekly Delivery
-                                            <br> Choose A membership That's Perfect for you!
-                                        </p>
-                                        <a href="#">
-                                            <span class="lk red">Subscribe > </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-lg-4 flex-md fd-c newsletter">
-                        <div class="block-title red">newsletter</div>
-                        <div class="col-lg-6">
-                            <div class="newletter-image fn image lazyloaded bg"></div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="col-r fl flex-sm">
-                                <div class="fn image lazyloaded bg" data-bg=""></div>
-                            </div>
-                            <div class="f1 info">
-                                <h3>Daily Briefing</h3>
-                                <p>
-                                    "Take back your inbox. SIgn up for our newsletter and start making sense of the world around you."
-                                </p>
-                                <a href=""><span class="lk red"> Sign up > </span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-    </main>
-    <footer class="page-footer container-fluid">
-        <div class="flex-sm jc-sb abi-fe block block-ibtg-footer">
-            <div class="flex-sm jc-sb ai-fe">
-                <a href="" class="brand"></a>
-                <p class="copyright"> 2019 Newsweek</p>
-            </div>
-            <ul class="social flex-xs ai-fe">
-                <li>
-                    <a href="" class="genericon genericon-facebook"></a>
+                <li class="nav-item d-flex">
+                    <a class="nav-link ">Indelible <i class="fas fa-chevron-right"></i></a>
                 </li>
             </ul>
         </div>
-        <div class="hori-line"></div>
-        <div class="footer-links">
-            <div class="row">
-                <div class="footer-links-menu col-md-7">
-                    <ul class="menu">
-                        <li class="first leaf">
-                            <a href="">About Us</a>
-                        </li>
-                        <li class="first leaf">
-                            <a href="">Corrections</a>
-                        </li>
-                        <li class="first leaf">
-                            <a href="">Contact Us</a>
-                        </li>
-                        <li class="first leaf">
-                            <a href="">Editorial Guidelines</a>
-                        </li>
-                        <li class="first leaf">
-                            <a href="">Advertise</a>
-                        </li>
-                        <li class="first leaf">
-                            <a href="">Copyright</a>
-                        </li>
-                        <li class="first leaf">
-                            <a href="">Terms of Sale</a>
-                        </li>
-                        <li class="first leaf">
-                            <a href="">Archive</a>
-                        </li>
-                        <li class="first leaf">
-                            <a href="">Announcements</a>
-                        </li>
-                        <li class="first leaf">
-                            <a href="">Consent preference</a>
-                        </li>
-                    </ul>
+    </nav>
+    <div class="container body-wrap">
+
+        <div class="row">
+            <div class=" col-sm-7   order-sm-2   col-md-7 order-md-2    col-lg-5  order-lg-2   shadow-lg">
+                <h3 class="unique">TOP STORY</h3>
+                <div class="main-story">
+                    <img src="https://d.newsweek.com/en/full/1515563/gilroy-shooting-california.jpg?w=591&h=364&q=90&f=eacabdce176062f73ab80daf9211f4e5" alt="main-story_one" class="img-fluid"><br>
+                    <a href="#">Trump and Russia's Putin Talk Venezuela, North Korea and Nuclear Weapons</a>
+                    <p>The White House said President Donald Trump and Russian President Vladimir Putin had a "very positive" conversation as tensions between their countries reached a historic high.</p>
                 </div>
-                <div class="footer-links-edition col-md-4 col-md-offset-1 flex-xs">
-                    <div class="col-lg-3">
-                        <label style="margin-top: 6px">
-                            <strong>Editions:</strong>
-                        </label>
+                <hr>
+                <h5>Russia Says U.S. 'Wrong' on Venezuela, Will Gather Allies to Prove It</h5>
+                <hr>
+                <h5 class="unique">MORE STORIES</h5>
+                <hr>
+                <div class="sub_main d-flex">
+
+                    <div class="left_main">
+                        <img alt="sub" src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" class="img-fluid">
                     </div>
-                    <div class="col-lg-9">
-                        <ul class="menu">
-                            <li class="first left">
-                                <a href="">U.S. Edition</a>
-                            </li>
-                            <li class="first left">
-                                <a href="">japaness</a>
-                            </li>
-                            <li class="first left">
-                                <a href="">Pakistan</a>
-                            </li>
-                            <li class="first left">
-                                <a href="">Polska</a>
-                            </li>
-                            <li class="first left">
-                                <a href="">Romania</a>
-                            </li>
-                        </ul>
+                    <div class="ryt_main">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nam.</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quod! Repellat autem, natus molestiae dolores rem odit perferendis non illo!</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="sub_main d-flex">
+
+                    <div class="left_main">
+                        <img alt="sub" src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" class="img-fluid">
+                    </div>
+                    <div class="ryt_main">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nam.</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quod! Repellat autem, natus molestiae dolores rem odit perferendis non illo!</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="sub_main d-flex">
+
+                    <div class="left_main">
+                        <img alt="sub" src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" class="img-fluid">
+                    </div>
+                    <div class="ryt_main">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nam.</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quod! Repellat autem, natus molestiae dolores rem odit perferendis non illo!</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="sub_main d-flex">
+
+                    <div class="left_main">
+                        <img alt="sub" src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" class="img-fluid">
+                    </div>
+                    <div class="ryt_main">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nam.</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quod! Repellat autem, natus molestiae dolores rem odit perferendis non illo!</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="sub_main d-flex">
+
+                    <div class="left_main">
+                        <img alt="sub" src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" class="img-fluid">
+                    </div>
+                    <div class="ryt_main">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nam.</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quod! Repellat autem, natus molestiae dolores rem odit perferendis non illo!</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="sub_main d-flex">
+
+                    <div class="left_main">
+                        <img alt="sub" src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" class="img-fluid">
+                    </div>
+                    <div class="ryt_main">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nam.</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quod! Repellat autem, natus molestiae dolores rem odit perferendis non illo!</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="sub_main d-flex">
+
+                    <div class="left_main">
+                        <img alt="sub" src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" class="img-fluid">
+                    </div>
+                    <div class="ryt_main">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nam.</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quod! Repellat autem, natus molestiae dolores rem odit perferendis non illo!</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="sub_main d-flex">
+
+                    <div class="left_main">
+                        <img alt="sub" src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" class="img-fluid">
+                    </div>
+                    <div class="ryt_main">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nam.</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quod! Repellat autem, natus molestiae dolores rem odit perferendis non illo!</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class=" col-sm-5   order-sm-1   col-md-5 order-md-1     col-lg-4  order-lg-1">
+                <h3 class="unique">FEATURED STORIES</h3>
+                <div class="feat-story">
+                    <img src="https://d.newsweek.com/en/full/1511786/newsweek-momentum-awards-2019.png?w=397&h=265&q=90&f=b5bee11f8b144487ff291880f4d318be" alt="feat-story" class="img-fluid"><br>
+                    <a href="#">Iran Defends Venezuela as U.S. Warns 'All Options' Are on the Table</a>
+                    <p>The White House said President Donald Trump and Russian President Vladimir Putin had a "very positive" conversation as tensions between their countries reached a historic high.</p>
+                </div>
+                <hr>
+                <h5>Juan Guaidó Says Venezuela Could Call for Foreign Military Intervention
+                </h5>
+                <hr>
+
+                <div class="feat-story">
+                    <img src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" alt="feat-story" class="img-fluid"><br>
+                    <a href="#">Iran Defends Venezuela as U.S. Warns 'All Options' Are on the Table</a>
+                    <p>The White House said President Donald Trump and Russian President Vladimir Putin had a "very positive" conversation as tensions between their countries reached a historic high.</p>
+                </div>
+                <hr>
+                <h5>Juan Guaidó Says Venezuela Could Call for Foreign Military Intervention
+                </h5>
+                <hr>
+
+                <div class="feat-story">
+                    <img src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" alt="feat-story" class="img-fluid"><br>
+                    <a href="#">Iran Defends Venezuela as U.S. Warns 'All Options' Are on the Table</a>
+                    <p>"If the [Justice] Department persists in its baseless refusal to comply with a validly issued subpoena, the Committee will move to contempt proceedings and seek further legal recourse," the House Judiciary Committee chairman wrote
+                        to Attorney General William Barr.</p>
+                </div>
+                <hr>
+                <h5>Juan Guaidó Says Venezuela Could Call for Foreign Military Intervention
+                </h5>
+                <hr>
+
+
+                <div class="feat-story">
+                    <img src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" alt="feat-story" class="img-fluid"><br>
+                    <a href="#">ACLU Sues Over Policy That Could See Asylum Seekers Jailed Indefinitely</a>
+                    <p>"Trump’s true motives are clear—to deter asylum seekers and punish people who apply for protection under our laws," said ACLU Immigrants' Rights Project senior staff attorney Michael Tan.
+                    </p>
+                </div>
+                <hr>
+                <h5>Juan Guaidó Says Venezuela Could Call for Foreign Military Intervention
+                </h5>
+                <hr>
+
+                <div class="feat-story card">
+                    <img src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" alt="feat-story" class="img-fluid"><br>
+                    <div class="card-body">
+                        <div class="panel-body">
+                            <a href="#">ACLU Sues Over Policy That Could See Asylum Seekers Jailed Indefinitely</a>
+                            <p>"Trump’s true motives are clear—to deter asylum seekers and punish people who apply for protection under our laws," said ACLU Immigrants' Rights Project senior staff attorney Michael Tan.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="feat-story card">
+                    <img src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" alt="feat-story" class="img-fluid"><br>
+                    <div class="card-body">
+                        <div>
+                            <a href="#">ACLU Sues Over Policy That Could See Asylum Seekers Jailed Indefinitely</a>
+                            <p>"Trump’s true motives are clear—to deter asylum seekers and punish people who apply for protection under our laws," said ACLU Immigrants' Rights Project senior staff attorney Michael Tan.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="feat-story card">
+                    <img src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" alt="feat-story" class="img-fluid"><br>
+                    <div class="card-body">
+                        <div>
+                            <a href="#">ACLU Sues Over Policy That Could See Asylum Seekers Jailed Indefinitely</a>
+                            <p>"Trump’s true motives are clear—to deter asylum seekers and punish people who apply for protection under our laws," said ACLU Immigrants' Rights Project senior staff attorney Michael Tan.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="feat-story card">
+                    <img src="https://d.newsweek.com/en/full/1515615/janet-yellen-federal-reserve-mnuchin.jpg?w=397&h=265&q=90&f=218421cd54f67d3559360ab61ed9ee5a" alt="feat-story" class="img-fluid"><br>
+                    <div class="card-body">
+                        <div>
+                            <a href="#">ACLU Sues Over Policy That Could See Asylum Seekers Jailed Indefinitely</a>
+                            <p>"Trump’s true motives are clear—to deter asylum seekers and punish people who apply for protection under our laws," said ACLU Immigrants' Rights Project senior staff attorney Michael Tan.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class=" col-sm-12  order-sm-3  col-md-12   order-md-3  col-lg-3 order-lg-3">
+                <h3 class="unique">OPINIONS</h3>
+                <div class="opinion">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c " alt="opinion" class="img-fluid">
+                    <div>
+                        <h1 class="h1">Yes, 'Send Her Back' Is the face of Evil - I Know Fascism WHen I See it</h1>
+                        <br>
+                        <h2>BY PETER ROFF</h2>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="opinion">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c " alt="opinion" class="img-fluid">
+                    <div>
+                        <p>Why Big Oil Should Embrace Greta Thunberg</p><br>
+                        <h5>BY KATIE MEHNERT</h5>
+                    </div>
+                </div>
+                <hr>
+                <div class="opinion">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c " alt="opinion" class="img-fluid">
+                    <div>
+                        <p>Russia's Dark History of Influence in America</p><br>
+                        <h5>BY NEWT GINGRICH</h5>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="opinion">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="opinion" class="img-fluid">
+                    <div>
+                        <p>Did This Loophole Save Trump Campaign from Conspiracy Charges?</p><br>
+                        <h5>BY NICK AKERMAN</h5>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="opinion">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="opinion" class="img-fluid">
+                    <div>
+                        <p>The EU Can Barely Hold Itself Together—and Putin Knows It</p><br>
+                        <h5>BY THEODORE KARASIK</h5>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="opinion">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="opinion" class="img-fluid">
+                    <div>
+                        <p class="my-font">The Anti-vax Movement is Morally Indefensible. Here's Why</p><br>
+                        <h5>BY JOEL MICHAEL REYNOLDS</h5>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <!-- bedin section under opinion -->
+                <h5>LATEST NEWS</h5>
+                <div class="latest_news_section">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="latest" class="img-fluid">
+                    <p>How to Watch and Live Stream the Kentucky Derby</p>
+                </div>
+                <hr>
+                <div class="latest_news_section">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="latest" class="img-fluid">
+                    <p>How to Watch and Live Stream the Kentucky Derby</p>
+                </div>
+                <hr>
+                <div class="latest_news_section">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="latest" class="img-fluid">
+                    <p>How to Watch and Live Stream the Kentucky Derby</p>
+                </div>
+                <hr>
+                <div class="latest_news_section">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="latest" class="img-fluid">
+                    <p>How to Watch and Live Stream the Kentucky Derby</p>
+                </div>
+                <hr>
+                <div class="latest_news_section">
+                    <img src=".https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="latest" class="img-fluid">
+                    <p>How to Watch and Live Stream the Kentucky Derby</p>
+                </div>
+                <hr>
+                <div class="latest_news_section">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="latest" class="img-fluid">
+                    <p>How to Watch and Live Stream the Kentucky Derby</p>
+                </div>
+                <hr>
+                <div class="latest_news_section">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="latest" class="img-fluid">
+                    <p>How to Watch and Live Stream the Kentucky Derby</p>
+                </div>
+                <hr>
+                <div class="latest_news_section">
+                    <img src="https://d.newsweek.com/en/full/1513583/jason-stanley.png?w=63&h=63&f=fd0bf29832c8aa9a4d7c2376906f096c" alt="latest" class="img-fluid">
+                    <p>How to Watch and Live Stream the Kentucky Derby</p>
+                </div>
+
+                <div class="clearfix"></div>
+                <!-- bedin section under opinion -->
+                <div class="row">
+                    <div class="col-sm-8 ml-sm-auto mr-sm-auto col-md-8 ml-md-auto mr-md-auto col-lg-12">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://d.newsweek.com/en/full/1515677/syria-us-military-coalition-oil.jpg?w=397&h=265&f=55ec4d8a831f33ade6a7aa1525222ab4" alt="left_card" class="img-fluid">
+                                <h5>J.R.R. Tolkien: Inside the Mastermind of Middle-Earth</h5>
+                                <p>Nearly a century ago, J.R.R. Tolkien introduced readers to the world of Middle-Earth, capturing the hearts and minds of generations to come. Explore the man behind The Hobbit and The Lord of the Rings in this new Special
+                                    Edition: J.R.R. Tolkien!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://d.newsweek.com/en/full/1515672/au-guang-dragon-zone-water-park.jpg?w=397&h=265&f=9ad9a0783411d39ec09b3bd47c7500a8" alt="left_card" class="img-fluid">
+                                <h5>J.R.R. Tolkien: Inside the Mastermind of Middle-Earth</h5>
+                                <p>Nearly a century ago, J.R.R. Tolkien introduced readers to the world of Middle-Earth, capturing the hearts and minds of generations to come. Explore the man behind The Hobbit and The Lord of the Rings in this new Special
+                                    Edition: J.R.R. Tolkien!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://d.newsweek.com/en/full/1515688/rush-limbaugh-donald-trump.jpg?w=397&h=265&f=822bff42b88cd22d5e091d9333898c48" alt="left_card" class="img-fluid">
+                                <h5>J.R.R. Tolkien: Inside the Mastermind of Middle-Earth</h5>
+                                <p>‘One size fits all’ teaching is a thing of the past. The nurturing of critical thinking is paramount in today’s global student. Where are the leaders of tomorrow studying?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://d.newsweek.com/en/full/1515688/rush-limbaugh-donald-trump.jpg?w=397&h=265&f=822bff42b88cd22d5e091d9333898c48" alt="left_card" class="img-fluid">
+                                <h5>GHANA: Africa’s Economic Gateway</h5>
+                                <p>Blending enviable political and social stability with a business-friendly approach, ambitious Namibia’s geo-strategic position offers international investors intelligent access to the markets of southern Africa and beyond.
+                                    Read more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!--begin design and development of in magazine-->
+        <div class="row mag">
+            <div class="col-sm-3">
+                <img alt="main_mag" src="https://d.newsweek.com/en/full/1515144/august-2-2019-cover.jpg?w=360&h=480&q=90&f=688907d28478b09296692a14564fd1a0" class="img-fluid">
+                <button class="b btn btn-light">SEE FEATURES <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="col-sm-9">
+                <div class="header_ban"><img alt="magazine_banner" src="./assets/images/magazine_poster.png" class="mr-auto ml-auto img-fluid"></div>
+                <hr>
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <img alt="feat-story" src="https://d.newsweek.com/en/full/1513527/fe-hacking-01-banner.jpg?w=466&h=311&q=90&f=bb8ad2b1cbb975b8142c1886ab45ce50" class="img-fluid">
+                        <a>Gingrich: China Is Far More Dangerous Than We Thought</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <img alt="feat-story" src="https://d.newsweek.com/en/full/1513561/fe-hacking-sidebar-clarke.jpg?w=466&h=311&q=90&f=55896c1535394b3e315073b178ff1f20" class="img-fluid">
+                        <a>Gingrich: China Is Far More Dangerous Than We Thought</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <img alt="feat-story" src="https://d.newsweek.com/en/full/1505599/us-iran-history-shoot-down-plane.jpg?w=466&h=311&q=90&f=f7eea65b164e576dce360428a033ec83" class="img-fluid">
+                        <a>Gingrich: China Is Far More Dangerous Than We Thought</a>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <div class="row before-editor mag">
+            <div class="col-sm-3 ">
+                <img alt="feat-story" src="https://d.newsweek.com/en/full/1513924/per-the-code-03-511574490.jpg?w=466&h=311&q=90&f=31b90e901ad3dbc556c772e49b2e1d8f" class="img-fluid">
+                <a>Gingrich: China Is Far More Dangerous Than We Thought</a>
+            </div>
+            <div class="col-sm-3">
+                <img alt="feat-story" src="https://d.newsweek.com/en/full/1513906/cul-books-01-748319631.jpg?w=466&h=311&q=90&f=4d4f32656f2e4a794e1a4927e8f60fe4" class="img-fluid">
+                <a>Gingrich: China Is Far More Dangerous Than We Thought</a>
+            </div>
+            <div class="col-sm-3">
+                <img alt="feat-story" src="https://d.newsweek.com/en/full/1513905/partingshot-stephaniedanler.jpg?w=466&h=311&q=90&f=60ac0710ba088a9e221a33622307c6ef" class="img-fluid">
+                <a>Gingrich: China Is Far More Dangerous Than We Thought</a>
+            </div>
+            <div class="col-sm-3">
+                <img alt="feat-story" src="https://d.newsweek.com/en/full/1513894/after-deluge.jpg?w=480&h=320&q=90&f=4825b04cdf0a84fe86c9d36a6f886d43" class="img-fluid">
+                <a>Gingrich: China Is Far More Dangerous Than We Thought</a>
+            </div>
+        </div>
+
+        <div class="header_ban"><img alt="magazine_banner" src="./assets/images/editor_pick_banner.png" class="mr-auto ml-auto"></div>
+        <hr>
+        <div class="row editor">
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img alt="editor_pick" src="https://d.newsweek.com/en/full/1515586/fortnite-world-cup.jpg?w=397&h=295&f=89deb15929337e0ddea32aa25098f199" class="img-fluid">
+                        <a href="#">The First New York City Pride Parade</a>
+                        <p>Exactly one year after Stonewall, Christopher Street Gay Liberation Day was the world's first official Pride celebration. But it almost didn't happen.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img alt="editor_pick" src="https://d.newsweek.com/en/full/1515393/us-marine-corps.jpg?w=397&h=295&f=bccf45c21356e00c7be2720865808134" class="img-fluid">
+                        <a href="#">The First New York City Pride Parade</a>
+                        <p>Exactly one year after Stonewall, Christopher Street Gay Liberation Day was the world's first official Pride celebration. But it almost didn't happen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img alt="editor_pick" src="https://d.newsweek.com/en/full/1508016/border-wall.jpg?w=397&h=295&f=eacc6cb7a8c792db484d242eb6b8bb9e" class="img-fluid">
+                            <a href="#">The First New York City Pride Parade</a>
+                            <p>Exactly one year after Stonewall, Christopher Street Gay Liberation Day was the world's first official Pride celebration. But it almost didn't happen.</p>
+                        </div>
+                        <div class="col-sm-6">
+
+                            <img alt="editor_pick" src="https://d.newsweek.com/en/full/1514910/donald-trump-xi-jinping-hong-kong-china.jpg?w=397&h=295&f=abc9ce14a3481993f9b8cc08c71744ba" class="img-fluid">
+                            <a href="#">The First New York City Pride Parade</a>
+                            <p>Exactly one year after Stonewall, Christopher Street Gay Liberation Day was the world's first official Pride celebration. But it almost didn't happen.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img alt="editor_pick" src="https://d.newsweek.com/en/full/1515200/amazon-rainforest-deforestation.jpg?w=397&h=295&f=f4f030e51a4fbadfc4e64f57e741115f" class="img-fluid">
+                        <a href="#">The First New York City Pride Parade</a>
+                        <p>Exactly one year after Stonewall, Christopher Street Gay Liberation Day was the world's first official Pride celebration. But it almost didn't happen.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img alt="editor_pick" src="https://d.newsweek.com/en/full/1515217/donald-trump-william-barr-npo-memorial-service.jpg?w=397&h=295&f=4d7f79ad599886305d8bffab166dbb50" class="img-fluid">
+                        <a href="#">The First New York City Pride Parade</a>
+                        <p>Exactly one year after Stonewall, Christopher Street Gay Liberation Day was the world's first official Pride celebration. But it almost didn't happen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img alt="editor_pick" src="https://d.newsweek.com/en/full/1514941/donald-trump-white-house-lawn-mueller-testimony.jpg?w=397&h=295&f=e8d36964092f1408a0598331e18e7a77" class="img-fluid">
+                            <a href="#">The First New York City Pride Parade</a>
+                            <p>Exactly one year after Stonewall, Christopher Street Gay Liberation Day was the world's first official Pride celebration. But it almost didn't happen.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img alt="editor_pick" src="https://d.newsweek.com/en/full/1515288/uswnt.jpg?w=397&h=295&f=e47a8dbe0ad5d3309fee9875add3224f" class="img-fluid">
+                            <a href="#">The First New York City Pride Parade</a>
+                            <p>Exactly one year after Stonewall, Christopher Street Gay Liberation Day was the world's first official Pride celebration. But it almost didn't happen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_ban"><img alt="magazine_banner" src="./assets/images/featured_slideshow.png" class="mr-auto ml-auto"></div>
+        <hr>
+
+        <div class="row feautures">
+            <div class="col-sm-4">
+                <img alt="featured_slideshow" src="https://d.newsweek.com/en/full/1514149/pierre-cardin.jpg?w=397&h=265&l=34&t=27&f=74dc444a96f906b4d71ec24a0df32e52" class="img-fluid">
+                <a>The History of Drag, from Julian Eltinge to 'RuPaul's Drag Race'</a>
+            </div>
+            <div class="col-sm-4">
+                <img alt="featured_slideshow" src="https://d.newsweek.com/en/full/1511473/oscar-11.jpg?w=397&h=265&f=bb7385a6191b40fe082f868859587304" class="img-fluid">
+                <a>The History of Drag, from Julian Eltinge to 'RuPaul's Drag Race'</a>
+            </div>
+            <div class="col-sm-4">
+                <img alt="featured_slideshow" src="https://d.newsweek.com/en/full/1509498/lions-safari.jpg?w=397&h=265&l=0&t=0&f=afdd7b8de0f1e30d30fd23ee9d8de1c7" class="img-fluid">
+                <a>The History of Drag, from Julian Eltinge to 'RuPaul's Drag Race'</a>
+            </div>
+
+            <div class="col-sm-4">
+                <img alt="featured_slideshow" src="https://d.newsweek.com/en/full/1508579/papua-new-guinea-diving-5.jpg?w=397&h=265&f=ef31ddb1cbe8c40714c16af48aaed9f6" class="img-fluid">
+                <a>The History of Drag, from Julian Eltinge to 'RuPaul's Drag Race'</a>
+            </div>
+            <div class="col-sm-4">
+                <img alt="featured_slideshow" src="https://d.newsweek.com/en/full/1506562/us-space-rocket-center.jpg?w=397&h=265&f=2e9a742611134322537a4553d9d98e59" class="img-fluid">
+                <a>The History of Drag, from Julian Eltinge to 'RuPaul's Drag Race'</a>
+            </div>
+            <div class="col-sm-4">
+                <img alt="featured_slideshow" src="https://d.newsweek.com/en/full/1506127/screaming-queens-before-stonewall-comptons-cafeteria-riot.jpg?w=397&h=265&f=8026342d93704d4734e44082b7578d19" class="img-fluid">
+                <a>The History of Drag, from Julian Eltinge to 'RuPaul's Drag Race'</a>
+            </div>
+        </div>
+
+        <h3 class="unique">OPINIONS</h3>
+        <div class="row others">
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515654/dairy-display-apollo-11-butter-ohio-fair.png?w=397&h=265&f=3549220157494b8c234ac1bc491d999a" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515654/dairy-display-apollo-11-butter-ohio-fair.png?w=397&h=265&f=3549220157494b8c234ac1bc491d999a" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515599/nypd.jpg?w=135&h=90&f=9ecfdb7d0463c8bd68d12fb5d0ae5f9f" alt="other_world" class="img-fluid">
+                    <a> WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515618/donald-trump.jpg?w=135&h=90&f=f080c5a61984ffc8b5da4fd9dc97ed3a" alt="other_world" class="img-fluid">
+                    <a> WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515599/nypd.jpg?w=135&h=90&f=9ecfdb7d0463c8bd68d12fb5d0ae5f9f" alt="other_world" class="img-fluid">
+                    <a> WGC - FedEx St. Jude International : Tee times, Tv and Live Stream Schedule</a>
+                </div>
+            </div>
+            <!--ROW END-->
+            <div class="clearfix_2"></div>
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515639/burford-primary-school-oxfordshire.jpg?w=397&h=265&f=12fd4e5711a0612dad5908191c1ad42e" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515642/girl-baby.jpg?w=397&h=265&f=65eb1c365d649c3be4632340270f7cac" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515610/american-airlines.jpg?w=135&h=90&f=907954406e750f3e3307756ce6d89a69" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515613/meghan-markle.jpg?w=135&h=90&f=e46df5c085d9cdbd2079fec3a3a90f84" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515580/pride.jpg?w=135&h=90&f=64f3b2c25fa59cfba6aa75df1c819292" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+            </div>
+            <div class="clearfix_2"></div>
+
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515326/trump-apple-tariff-iphone.jpg?w=397&h=265&f=47cfc2d759ef8285203abddb63794af0" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515153/dubai-starbucks.jpg?w=397&h=265&f=07f6edd99844860767cdc54cc7b95457" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1510757/matt-shumer-founder-ceo-visos.png?w=135&h=90&f=b26d097e894b7d38e3a525a4ad85b8f4" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1514412/coca-cola.jpg?w=135&h=90&f=afc681bbcd0922f874471afdda7cd8f2" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/338271/06-05-green-09.jpg?w=135&h=90&f=00ff0d6b2b9252047a15fcb2f3b8f196" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+            </div>
+            <div class="clearfix_2"></div>
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515666/lion-performance.png?w=397&h=265&f=a8c63cd4e59b91ac4b01db48f019eebd" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515624/nasa-tess.jpg?w=397&h=265&f=aedecfae4ba327db3da9673ba5713967" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1112097/slack-down-not-working.jpg?w=135&h=90&f=d04e487f02e36c1a6804fb9b01e17d7c" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515240/dying-star.jpg?w=135&h=90&f=3d96a298800ace96c6d8b06548acae04" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515251/tick.jpg?w=135&h=90&f=d79fbeddfefde6f35c6aa6e0a82bfca9" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+            </div>
+            <div class="clearfix_2"></div>
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515723/irishman-netflix-martin-scorsese.jpg?w=397&h=265&f=67a1c9c61898ce87e231c323b32adfa9" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515710/tacos.jpg?w=397&h=265&f=bb8fd7f4da3b4751225df06d27609ccf" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515700/toro-embolado.jpg?w=135&h=90&f=95fd292508b31eedd70448140d2b616c" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515702/jake-paul-tana-mongeau-wedding.jpg?w=135&h=90&f=cc67163d4299f62aac8ed19ea93d1a3f" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1507619/90-day-fiance-star-nicole-nafziger-celebrates-wedding-without-azan.png?w=135&h=90&f=61d43e29f193e49021014a957aebf959" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+            </div>
+
+            <div class="clearfix_2"></div>
+
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515643/ezekiel-elliott-dallas-cowboys.jpg?w=397&h=265&f=284256866afe1444d34192007533f28d" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="https://d.newsweek.com/en/full/1515600/cori-gauff.jpg?w=397&h=265&f=804bdc35d5fafdfa419aaa5fc3cbc2b6" alt="others" class="img-fluid">
+                <a href="#">Michael Cohen: Inside White Collar Prison Where Ex-Trump Lawyer Is Headed</a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515197/lewis-hamilton.jpg?w=135&h=90&f=51e16e6e4aca7799a6d1853bd56825a7" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1515433/egan-bernal-geraint-thomas.jpg?w=135&h=90&f=2ae9bee8c99d740df074ac896d839132" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1514962/nwsl-utah-royals.jpg?w=135&h=90&f=a939fb7f2c775f278eb882f5c6fe197a" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <h1 class="unique">SUBSCRIBE</h1>
+                <div class="panel panel-default before_footer">
+                    <div class="panel-body">
+                        <div class="before_footer_top">
+                            <img src="./assets/images/before_footer_one.png" alt="before_footer" class="img-fluid">
+                            <div>
+                                <h1 class="h1">Digital Only</h1>
+                                <h6 class="h6"><i class="fa fa-check"></i> access to 40+ digital editions</h6>
+                                <h6 class="h6"><i class="fa fa-check"></i> Website access</h6>
+                                <h6 class="h6"><i class="fa fa-check"></i> Daily Newsletter</h6>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="before_footer_top">
+                            <img src="./assets/images/before_footer_two.png" alt="before_footer" class="img-fluid">
+                            <div>
+                                <h1 class="h1">Digital Only</h1>
+                                <h6 class="h6"><i class="fa fa-check"></i> access to 40+ digital editions</h6>
+                                <h6 class="h6"><i class="fa fa-check"></i> Website access</h6>
+                                <h6 class="h6"><i class="fa fa-check"></i> Daily Newsletter</h6>
+                            </div>
+                        </div>
+                        <button class="btn btn-danger d-block mx-auto c">SUBSCRIBE <i
+                                class="fa fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+
+            <div class="col-sm-12 col-md-12 col-lg-4">
+
+                <h1 class="unique">READ MORE</h1>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1514962/nwsl-utah-royals.jpg?w=135&h=90&f=a939fb7f2c775f278eb882f5c6fe197a" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1514962/nwsl-utah-royals.jpg?w=135&h=90&f=a939fb7f2c775f278eb882f5c6fe197a" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1514962/nwsl-utah-royals.jpg?w=135&h=90&f=a939fb7f2c775f278eb882f5c6fe197a" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+                <hr>
+                <div class="top">
+                    <img src="https://d.newsweek.com/en/full/1514962/nwsl-utah-royals.jpg?w=135&h=90&f=a939fb7f2c775f278eb882f5c6fe197a" alt="other_world" class="img-fluid">
+                    <a>Last Surviving White Rose Member Just Received Germany's Highest Honor</a>
+                </div>
+
+            </div>
+
+
+            <footer>
+                <hr>
+                <div class="upper_foot">
+                    <div><img alt="footer_banner" src="./assets/images/logo.png"> <i>© 2019 NEWSWEEK</i></div>
+                    <div>
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <i class="fab fa-instagram fa-2x"></i>
+                        <i class="fab fa-linkedin fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="lower_foot">
+                    <div>
+                        <ul>
+                            <li><a>About Us</a></li>
+                            <li><a>Corrections</a></li>
+                            <li><a>Contact Us</a></li>
+                            <li><a>Editorial Guidelines</a></li>
+                            <li><a>Advertise</a></li>
+                            <li><a>Copyright</a></li>
+                            <li><a>Terms & Conditions</a></li>
+                            <li><a>Privacy Policy</a></li>
+                            <li><a>Cookie Policy</a></li>
+                            <li><a>Terms of Sale</a></li>
+                            <li><a>Archive</a></li>
+                            <li><a>Announcements</a></li>
+                            <li><a>Consent preferences</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a>U.S. Edition</a></li>
+                            <li><a>Middle East</a></li>
+                            <li><a>한국한국</a></li>
+                            <li><a>日本</a></li>
+                            <li><a>Pakistan</a></li>
+                            <li><a>Polska</a></li>
+                            <li><a>România</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
