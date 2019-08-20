@@ -375,6 +375,12 @@ footer ul li a {
     padding-right: 3%;
 }
 
+nav div {
+    color: white;
+}
+
+
+/*
 .nav-item a {
     color: #000;
     font-size: 0.9rem;
@@ -406,9 +412,31 @@ footer ul li a {
 .nav-item li:last-child {
     border-right: 0;
 }
+*/
+
+.date {
+    color: white;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.main-logo {
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+.sign-container {
+    display: flex;
+    margin-top: 3%;
+    margin-left: 35%;
+}
 
 .b {
     width: 100%;
+}
+
+img[alt="main-logo"] {
+    left: 0%;
 }
 
 .sign_in_subscribe>a {
@@ -421,7 +449,7 @@ footer ul li a {
 }
 
 .sign_in_subscribe {
-    margin-right: 1%;
+    margin-left: 30%;
 }
 
 .nav-brand {
@@ -430,7 +458,7 @@ footer ul li a {
 
 .menu li {
     float: left;
-    margin: .6em;
+    margin: .3em;
 }
 
 .menu li a {
@@ -442,7 +470,7 @@ footer ul li a {
 }
 
 .subscribe {
-    height: 25em;
+    height: 1em;
     background: white;
 }
 
@@ -506,4 +534,16 @@ footer ul li a {
 
 .newletter-image {
     background: url("https://g.newsweek.com/themes/newsweek/images/subscribe-img2.gif") center center / cover no-repeat;
+}
+
+@media only screen and (max-width: 400px) {
+    nav {
+        width: 100%;
+    }
+    .date {
+        visibility: hidden;
+    }
+    .nav-clearfix {
+        height: 10vh;
+    }
 }

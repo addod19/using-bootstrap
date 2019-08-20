@@ -11,58 +11,68 @@
     <link rel="stylesheet" href="./assets/stylesheet/reset.css" />
     <link rel="stylesheet" href="./assets/stylesheet/style.css" />
     <link rel="icon" type="image/png" href="./assets/favico/favico.png">
-    <title>Using bootstrap</title>
+    <title>Newsweek - Newsweek</title>
 
 </head>
 
 <body>
-    <nav class="navbar  navbar-expand-xxl justify-content-between fixed-top nav_1 border border-0">
-        <a class="nav-brand"><img alt="brand_name" src="./assets/images/main_logo.png" class="img-fluid"></a>
-        <div class="ml-auto sign_in_subscribe">
-            <a class="text-white">SIGN IN </a> <button class="btn btn-sm btn-light ">SUBSCRIBE</button>
+
+    <nav class="navbar navbar-expand-lg navbar-light d-flex flex-column fixed-top">
+
+        <div class="header-one d-flex flex-row justify-content-between align-items-center p-2">
+            <div class="text-white d-none d-sm-none d-md-none d-lg-block">Wed, Feb 13, 2019</div>
+            <a class="navbar-brand" href="#">
+                <img class="news-logo" src="./assets/images/main_logo.png" alt="">
+            </a>
+            <div class="d-flex flex-row">
+                <a class="text-white  text-decoration-none pr-2 font-weight-bolder align-self-center" href="#">SIGN IN</a>
+                <a class="text-danger  text-decoration-none font-weight-bolder p-2" style=" background: white;" href="#">SUBSCRIBE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#trigger" aria-controls="trigger" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+
         </div>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#my">
-            <span class="fas fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="my">
-            <ul class="navbar-nav exhibit">
-                <li class="nav-item d-flex">
-                    <a class="nav-link "></a><img alt="search" src="assets/images/search.png">
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"> US <i class="fas fa-chevron-right"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"> WORLD <i class="fas fa-chevron-right"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"> BUSINESS <i class="fas fa-chevron-right"></i></a>
-                </li>
 
+        <div class="collapse navbar-collapse w-100 bg-light" id="trigger" style="text-align:center">
+            <!--    <a class="navbar-brand" href="#">logo</a>-->
+            <ul class="navbar-nav  mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link">TECH & SCIENCE <i class="fas fa-chevron-right"></i></a>
+                    <a class="nav-link black-text" href="#">U.S</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">CULTURE <i class="fas fa-chevron-right"></i></a>
+                    <a class="nav-link black-text" href="#">World</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link black-text" href="#">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link black-text" href="#">Tech &amp; Science</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link black-text" href="#">Culture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link black-text" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
 
-                <li class="nav-item">
-                    <a class="nav-link">SPORTS <i class="fas fa-chevron-right"></i></a>
+                    <a class="nav-link black-text" href="#">Health</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">HEALTH <i class="fas fa-chevron-right"></i></a>
-                </li>
 
-                <li class="nav-item">
-                    <a class="nav-link">OPINION <i class="fas fa-chevron-right"></i></a>
-                </li>
-
-                <li class="nav-item d-flex">
-                    <a class="nav-link ">VANTAGE <i class="fas fa-chevron-right"></i></a>
+                    <a class="nav-link black-text" href="#">Opinion</a>
                 </li>
             </ul>
+            <form class="form-inline d-none d-sm-none d-md-none d-lg-block">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <img src="images/_ionicons_svg_md-search.svg" height="30" alt="">
+            </form>
         </div>
+
     </nav>
+
     <div class="container-fluid body-wrap">
 
         <div class="row">
