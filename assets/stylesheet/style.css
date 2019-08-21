@@ -5,7 +5,7 @@ body {
 
 .body-wrap {
     background-color: #fff;
-    margin-top: 8em;
+    margin-top: 2em;
 }
 
 .fixed-top {
@@ -14,25 +14,13 @@ body {
 
 .header-one {
     background-color: #F72210;
-    height: 50px;
-    width: 100%;
+    height: 60px;
+    width: 102%;
 }
 
 .nav-item {
     margin-right: 45px;
 }
-
-
-/*
-.sign_in_subscribe>button {
-    font-size: .8rem;
-    border-radius: 0;
-}
-
-.sign_in_subscribe>a {
-    font-size: .6rem;
-}
-*/
 
 .exhibit {
     background-color: white;
@@ -64,78 +52,12 @@ footer {
     font-family: inherit;
 }
 
-
-/*
-@media only screen and (max-width: 480px) {
-    .navbar-toggler {
-        visibility: visible;
-    }
-    .d-sm-block {
-        display: none;
-    }
-    .date {
-        visibility: hidden;
-    }
-    img[alt="main-logo"] {
-        position: relative;
-        right: 100%;
-    }
-    .sign_in_subscribe {
-        display: flex;
-        position: relative;
-        bottom: 20%;
-        left: -10%;
+@media only screen and (max-width: 459px) {
+    .header-one {
+        background-color: #F72210;
+        width: 105%;
     }
 }
-
-@media only screen and (min-width: 576px) {
-    .date {
-        visibility: hidden;
-    }
-    img[alt="main-logo"] {
-        position: relative;
-        right: 100%;
-    }
-    .sign_in_subscribe {
-        display: flex;
-        position: relative;
-        bottom: 20%;
-        left: -10%;
-    }
-    .navbar-toggler {
-        display: block;
-    }
-}
-
-
-@media only screen and (max-width: 780px) {
-    .date {
-        visibility: hidden;
-    }
-    img[alt="main-logo"] {
-        position: relative;
-        right: 100%;
-    }
-    .sign_in_subscribe {
-        display: flex;
-        position: relative;
-        bottom: 20%;
-        right: 20%;
-    }
-    .navbar-toggler {
-        display: block;
-    }
-    .d-sm-block {
-        display: none;
-    }
-    .nav-clearfix {
-        height: 10vh;
-    }
-}
-
-
-
-*/
 
 @media only screen and (min-width: 1090px) {
     .d-sm-block {

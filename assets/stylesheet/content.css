@@ -379,41 +379,6 @@ nav div {
     color: white;
 }
 
-
-/*
-.nav-item a {
-    color: #000;
-    font-size: 0.9rem;
-    font-weight: bolder;
-}
-
-.nav-item:hover {
-    background: #000;
-    color: white;
-    cursor: pointer;
-}
-
-.navbar {
-    padding: 0;
-    border-bottom: 1px solid silver;
-    background: #f72210;
-}
-
-.nav-item li {
-    border-right: 1px solid silver;
-    line-height: 20px;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
-    color: #333;
-    justify-content: space-around;
-    padding-top: 1%;
-}
-
-.nav-item li:last-child {
-    border-right: 0;
-}
-*/
-
 .date {
     color: white;
     margin-top: 3%;
