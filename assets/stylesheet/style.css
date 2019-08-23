@@ -1,0 +1,66 @@
+body {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-wrap {
+    background-color: #fff;
+    margin-top: 2em;
+}
+
+.fixed-top {
+    margin-top: 0;
+}
+
+.header-one {
+    background-color: #F72210;
+    height: 60px;
+    width: 102%;
+}
+
+.nav-item {
+    margin-right: 45px;
+}
+
+.exhibit {
+    background-color: white;
+    margin-left: 70%;
+    padding: 1% 5% 50% 3%;
+}
+
+footer {
+    width: 100%;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.left_main {
+    width: 60%;
+}
+
+.ryt_main {
+    width: 100%;
+}
+
+.h1 {
+    font-size: .9rem;
+    text-align: center;
+    font-weight: bolder;
+    color: #000;
+    font-family: inherit;
+}
+
+@media only screen and (max-width: 459px) {
+    .header-one {
+        background-color: #F72210;
+        width: 105%;
+    }
+}
+
+@media only screen and (min-width: 1090px) {
+    .d-sm-block {
+        display: none;
+    }
+}
