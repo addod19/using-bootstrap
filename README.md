@@ -10,6 +10,17 @@ The project is part of a series of projects to be completed by students of [Micr
 - CSS
 - BOOTSTRAP
 
+## Screenshot
+
+### Laptop/Desktop
+<img src="assets/images/nl.PNG" alt="large">
+
+### Tablet
+<img src="assets/images/nm.PNG" alt="medium">
+
+### Mobile
+<img src="assets/images/ns.PNG" alt="small">
+
 ## Usage
 
 > Clone the repository to your local machine
