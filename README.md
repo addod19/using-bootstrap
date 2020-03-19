@@ -21,38 +21,61 @@ The project is part of a series of projects to be completed by students of [Micr
 ### Mobile
 <img src="assets/images/ns.PNG" alt="small">
 
-## Usage
 
-> Clone the repository to your local machine
+### Live version
 
-```sh
-$ git clone https://github.com/addod19/using-bootstrap.git
-```
+* [Live Version](https://addod19.github.io/using-bootstrap/)
 
-> cd into the directory
+## Getting Started
 
-```sh
-$ cd using-bootstrap
-```
+To get a local copy up and running follow these simple example steps.
 
-> open index.html with your favourite web browser.
+1. ``` git clone https://github.com/addod19/using-bootstrap.git ```
+2. Open the index.html with your favorite browser
+3. Explore our site
+4. Enjoy the beauty of responsive design
 
-## Deployment
+### Prerequisites
 
-The demo page can be found [HERE](https://addod19.github.io/using-bootstrap/)
+- A modern browser
 
-## Designed and developed by
+### Future Update
+Improvements for ```v.1.1```
 
-[Addo Daniel Larbi](https://github.com/addod19)
+## Authors
 
-## Contributing
+👤 **Author1**
+
+- Github: [@addod19](https://github.com/addod19)
+- Twitter: [@DanielLarbiAdd1](https://twitter.com/DanielLarbiAdd1)
+- Linkedin: [Daniel Larbi Addo](https://linkedin.com/in/daniel-larbi-addo/)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/addod19/using-bootstrap/issues).
+
 
 1. Fork it (https://github.com/addod19/using-bootstrap/fork)
-2. Create your feature branch (git checkout -b feature/[choose-a-name])
-3. Commit your changes (git commit -am 'What this commit will fix/add')
-4. Push to the branch (git push origin feature/[chosen name])
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
 5. Create a new Pull Request
+
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE.md) file for details
+
+
+## Show your support
+
+Give us a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
