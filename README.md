@@ -49,7 +49,7 @@ Improvements for ```v.1.1```
 - Github: [@addod19](https://github.com/addod19)
 - Twitter: [@DanielLarbiAdd1](https://twitter.com/DanielLarbiAdd1)
 - Linkedin: [Daniel Larbi Addo](https://linkedin.com/in/daniel-larbi-addo/)
-
+- Email: (addodaniellarbi@gmail.com)
 
 ## 🤝 Contributing
 
