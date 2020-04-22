@@ -1,6 +1,6 @@
 # USING BOOTSTRAP
 
-A practical demonstration of designing a website with bootstrap framework.
+> A practical demonstration of designing a website with bootstrap framework.
 This project is designed to look like [newsweek.com's news website](https://www.newsweek.com/), for the purpose of practical demonstration.
 The project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!").
 
@@ -39,8 +39,11 @@ To get a local copy up and running follow these simple example steps.
 
 - A modern browser
 
-### Future Update
-Improvements for ```v.1.1```
+### Future Update(v1.2)
+
+- Add animations
+- Add javascript validation
+- Improve the UI
 
 ## Authors
 
@@ -76,6 +79,6 @@ Give us a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- Microverse TSE's
+
